@@ -2,7 +2,7 @@
 
 ## 📋 Sobre o Projeto
 
-Este é o portfólio pessoal de Raul Lize, desenvolvedor web e estudante de Tecnologia em Sistemas para Internet no IFSul Campus Charqueadas. Este projeto foi criado para apresentar minhas habilidades, projetos e experiências profissionais de uma forma moderna e visualmente atraente.
+Este projeto foi criado para apresentar minhas habilidades, projetos e experiências profissionais de uma forma moderna e visualmente atraente.
 
 ## ✨ Características
 
@@ -99,7 +99,6 @@ npm run dev
 
 ## 🔮 Futuras Implementações
 
-- ✅ Funcionalidade completa de alternância de idiomas
 - ✅ Modo claro/escuro
 - ✅ Blog integrado
 - ✅ Mais projetos e detalhes de caso de uso
@@ -110,4 +109,4 @@ Sinta-se à vontade para entrar em contato comigo através dos canais disponíve
 
 ---
 
-⭐ Desenvolvido com 💙 por Raul Lize - 2024
+⭐ Desenvolvido com 💙 por Raul Lize - 2025
