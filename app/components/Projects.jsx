@@ -1,3 +1,4 @@
+import DecryptedText from './ui/DecryptedText';
 import GradientText from './ui/GradientText';
 import ProjectCard from './ui/ProjectCard';
 
@@ -47,7 +48,16 @@ const Projects = () => {
               Meus Projetos
             </GradientText>
           </h2>
-          <p className="text-lg text-gray-300">Alguns dos projetos que desenvolvi ou participei</p>
+          <div className="text-lg text-gray-300">
+            <DecryptedText
+              text="Alguns dos projetos que desenvolvi ou participei"
+              speed={60}
+              maxIterations={10}
+              sequential={true}
+              revealDirection="start"
+              animateOn="view"
+            />
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,3 +1,4 @@
+import DecryptedText from './ui/DecryptedText';
 import GradientText from './ui/GradientText';
 
 const About = () => {
@@ -14,7 +15,16 @@ const About = () => {
                 Olá
               </GradientText>
             </h2>
-            <p className="text-lg md:text-xl font-medium text-gray-300">Bem-vindo(a) ao meu portfólio!</p>
+            <div className="text-lg md:text-xl font-medium text-gray-300">
+              <DecryptedText
+                text="Bem-vindo(a) ao meu portfólio!"
+                speed={60}
+                maxIterations={10}
+                sequential={true}
+                revealDirection="start"
+                animateOn="view"
+              />
+            </div>
           </div>
           
           <div className="space-y-6 text-gray-300 leading-relaxed">

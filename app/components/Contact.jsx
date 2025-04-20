@@ -1,3 +1,4 @@
+import DecryptedText from './ui/DecryptedText';
 import GradientText from './ui/GradientText';
 
 const contactInfo = [
@@ -60,7 +61,16 @@ const Contact = () => {
               Contato
             </GradientText>
           </h2>
-          <p className="text-lg text-gray-300">Vamos conversar? Entre em contato comigo!</p>
+          <div className="text-lg text-gray-300">
+            <DecryptedText
+              text="Vamos conversar? Entre em contato comigo!"
+              speed={60}
+              maxIterations={10}
+              sequential={true}
+              revealDirection="start"
+              animateOn="view"
+            />
+          </div>
         </div>
         
         <div className="max-w-3xl mx-auto">

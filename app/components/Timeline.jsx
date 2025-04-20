@@ -1,3 +1,4 @@
+import DecryptedText from './ui/DecryptedText';
 import GradientText from './ui/GradientText';
 
 const timelineItems = [
@@ -36,7 +37,16 @@ const Timeline = () => {
               Minha Trajetória
             </GradientText>
           </h2>
-          <p className="text-lg text-gray-300">Um breve resumo da minha jornada como desenvolvedor</p>
+          <div className="text-lg text-gray-300">
+            <DecryptedText
+              text="Um breve resumo da minha jornada como desenvolvedor"
+              speed={60}
+              maxIterations={10}
+              sequential={true}
+              revealDirection="start"
+              animateOn="view"
+            />
+          </div>
         </div>
 
         {/* Timeline para desktop */}
