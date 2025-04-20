@@ -1,4 +1,5 @@
 import { Inter, Poppins } from "next/font/google";
+import ClientWrapper from "./components/ui/ClientWrapper";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${poppins.variable} font-sans bg-black text-gray-100`}
       >
-        {children}
+        <ClientWrapper>
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );
