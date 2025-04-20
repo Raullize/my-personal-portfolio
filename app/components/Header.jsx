@@ -1,11 +1,19 @@
 import CVDownload from './CVDownload';
 import LanguageToggle from './LanguageToggle';
 import GradientText from './ui/GradientText';
+import Squares from './ui/Squares';
 
 const Header = () => {
   return (
-    <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-black to-gray-900">
+    <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
       <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5"></div>
+      <Squares 
+        speed={0.5} 
+        squareSize={40}
+        direction='diagonal'
+        borderColor='rgba(255, 255, 255, 0.1)'
+        hoverFillColor='rgba(99, 102, 241, 0.2)'
+      />
       
       <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-4 z-10">
         <LanguageToggle />
