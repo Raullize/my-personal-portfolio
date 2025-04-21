@@ -20,12 +20,32 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // Função para rolar suavemente para o topo
+  // Função para rolar suavemente para o topo com animação personalizada
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    const startY = window.scrollY;
+    const targetY = 0;
+    const duration = Math.min(1000 + startY * 0.3, 1500); // Duração entre 1s e 1.5s
+    let startTime = null;
+
+    // Função para calcular a posição do scroll em cada frame (efeito de desaceleração)
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+    // Função de animação que será executada em cada frame
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
+      const easedProgress = easeOutCubic(progress);
+
+      window.scrollTo(0, startY * (1 - easedProgress));
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    // Iniciar animação
+    requestAnimationFrame(animation);
   };
 
   return (
