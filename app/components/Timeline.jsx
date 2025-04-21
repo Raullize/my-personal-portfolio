@@ -80,7 +80,10 @@ const Timeline = () => {
 
                   {/* Círculo central */}
                   <FadeIn delay={0.3 + (0.1 * index)} duration={0.4} direction="none">
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gray-900 border-2 border-primary-500 rounded-full z-10"></div>
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full z-10 flex items-center justify-center">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse"></div>
+                      <div className="absolute w-3 h-3 bg-gray-900 rounded-full"></div>
+                    </div>
                   </FadeIn>
                 </div>
               </div>
@@ -98,7 +101,10 @@ const Timeline = () => {
               <div key={item.year} className="relative pl-12">
                 {/* Círculo */}
                 <FadeIn delay={0.2 + (0.1 * index)} duration={0.5} direction="none">
-                  <div className="absolute left-2 transform -translate-x-1/2 w-5 h-5 bg-gray-900 border-2 border-primary-500 rounded-full"></div>
+                  <div className="absolute left-4 top-6 transform -translate-x-1/2 w-7 h-7 flex items-center justify-center">
+                    <div className="w-7 h-7 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 absolute animate-pulse"></div>
+                    <div className="w-3.5 h-3.5 bg-gray-900 rounded-full absolute"></div>
+                  </div>
                 </FadeIn>
                 
                 <FadeIn direction="left" delay={0.3 + (0.1 * index)}>

@@ -8,38 +8,31 @@ import ProjectCard from './ui/ProjectCard';
 const projects = [
   {
     title: 'Armazém Girassol',
-    description: 'Plataforma de e-commerce para produtos naturais e orgânicos.',
+    description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
     imageUrl: '/projects/projeto-default.jpg',
-    siteUrl: '',
-    githubUrl: ''
+    siteUrl: 'https://www.armazemgirassol.com.br',
+    githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
   {
     title: 'StockDeps',
-    description: 'Sistema de gerenciamento de estoque e inventário.',
+    description: 'Sistema avançado de gerenciamento de estoque e inventário, desenvolvido para otimizar o controle de produtos e recursos.',
     imageUrl: '/projects/projeto-default.jpg',
     siteUrl: '',
-    githubUrl: ''
+    githubUrl: 'https://github.com/depsModels/stockDeps'
   },
   {
     title: 'DEPS Models',
     description: 'Landing Page da empresa DEPS Models apresentando sua história, cultura e serviços oferecidos no mercado de desenvolvimento.',
     imageUrl: '/projects/projeto-default.jpg',
-    siteUrl: '',
-    githubUrl: ''
+    siteUrl: 'https://depsmodels.com',
+    githubUrl: 'https://github.com/depsModels/deps'
   },
   {
     title: 'octo.hub',
     description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
     imageUrl: '/projects/projeto-default.jpg',
     siteUrl: '',
-    githubUrl: ''
-  },
-  {
-    title: 'Psicóloga Karine Strapazon',
-    description: 'Portfólio profissional da psicóloga Karine Strapazon, com informações sobre sua abordagem terapêutica e serviços oferecidos.',
-    imageUrl: '/projects/projeto-default.jpg',
-    siteUrl: '',
-    githubUrl: ''
+    githubUrl: 'https://github.com/depsModels/octoHub'
   },
   {
     title: 'MyGYM',
