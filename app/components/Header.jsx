@@ -21,7 +21,7 @@ const Header = () => {
       </div>
 
       <div className="relative z-10 container-wrapper flex flex-col items-center">
-        <span className="text-primary-400 text-lg md:text-xl font-medium tracking-widest mb-4">DESENVOLVEDOR WEB</span>
+        <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">DESENVOLVEDOR WEB</span>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading">
           <GradientText 
             colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
