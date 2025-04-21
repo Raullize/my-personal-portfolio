@@ -5,22 +5,22 @@ const timelineItems = [
   {
     year: '2023',
     title: 'Ensino Médio Técnico',
-    description: 'Ano de conclusão do meu ensino médio técnico em informática, período onde tive meus primeiros contatos com diversas linguagens de programação e inclusive projetos escolares que pude testar meus conhecimentos.'
+    description: 'Conclusão do curso técnico em Informática, onde tive meus primeiros contatos com linguagens de programação e participei de projetos escolares que me permitiram aplicar na prática os conhecimentos adquiridos em sala de aula.'
   },
   {
     year: '2024',
     title: 'DEPS Models',
-    description: 'Foi o ano onde tive a oportunidade de participar da organização da DEPS Models e ter ganhado muita experiência com projetos para clientes reais, fazendo o uso de metodologias ágeis, reuniões com os clientes para alinhar as expectativas. Pude participar tanto no desenvolvimento front end quanto back end das aplicações.'
+    description: 'Participei da estruturação da DEPS Models, uma iniciativa que me proporcionou experiência real com clientes e projetos de verdade. Atuei em todas as etapas do desenvolvimento, utilizando metodologias ágeis, participando de reuniões com stakeholders e contribuindo tanto no front-end quanto no back-end das aplicações.'
   },
   {
     year: '2025',
     title: 'Compass UOL',
-    description: 'Tive a oportunidade de entrar na área da tecnologia e desenvolvimento na empresa Compass UOL, na bolsa scholarship Open Finance, onde pude aperfeiçoar meu conhecimento em relação às linguagens de JS, específico nodeJS.'
+    description: 'Fui selecionado para a bolsa Scholarship Open Finance da Compass UOL, onde aprofundei meus conhecimentos em desenvolvimento com foco em JavaScript e Node.js. Essa experiência tem sido essencial para meu crescimento profissional em um ambiente dinâmico e voltado à inovação financeira.'
   },
   {
-    year: 'Até o momento',
-    title: 'Novas oportunidades',
-    description: 'Sigo em busca de oportunidades onde possam não só agregar a mim, mas principalmente que eu consiga agregar valor com meus conhecimentos.'
+    year: 'Atualmente',
+    title: 'Em busca de novas oportunidades',
+    description: 'Sigo aberto a oportunidades que não apenas contribuam para o meu desenvolvimento, mas que também me permitam gerar valor com os conhecimentos que venho construindo ao longo da minha trajetória.'
   }
 ];
 
