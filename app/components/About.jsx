@@ -1,6 +1,41 @@
 import DecryptedText from './ui/DecryptedText';
 import GradientText from './ui/GradientText';
 
+// Definindo as tecnologias com seus níveis
+const technologies = [
+  { name: 'HTML', level: 'Avançado' },
+  { name: 'CSS', level: 'Intermediário' },
+  { name: 'JavaScript', level: 'Intermediário' },
+  { name: 'React', level: 'Básico' },
+  { name: 'Next.js', level: 'Básico' },
+  { name: 'Tailwind', level: 'Básico' },
+  { name: 'Node.js', level: 'Básico' },
+  { name: 'MySQL', level: 'Básico' },
+  { name: 'PostgreSQL', level: 'Básico' },
+  { name: 'MongoDB', level: 'Básico' },
+  { name: 'Git', level: 'Intermediário' },
+  { name: 'GitHub', level: 'Intermediário' },
+  { name: 'Java', level: 'Básico' },
+  { name: 'C', level: 'Básico' },
+  { name: 'Python', level: 'Básico' },
+  { name: 'PHP', level: 'Básico' },
+  { name: 'TypeScript', level: 'Básico' },
+];
+
+// Função para determinar a classe de cor com base no nível
+const getLevelColorClass = (level) => {
+  switch (level) {
+    case 'Básico':
+      return 'border-blue-500 hover:bg-blue-500/10';
+    case 'Intermediário':
+      return 'border-green-500 hover:bg-green-500/10';
+    case 'Avançado':
+      return 'border-purple-500 hover:bg-purple-500/10';
+    default:
+      return 'border-gray-700';
+  }
+};
+
 const About = () => {
   return (
     <section id="sobre" className="section-padding bg-gradient-to-b from-gray-900 to-black">
@@ -29,36 +64,70 @@ const About = () => {
           
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <p className="text-lg">
-              Sou estudante de Tecnologia em Sistemas para Internet no IFSul Campus Charqueadas. 
-              Em meus projetos, utilizo tecnologias como HTML, CSS, JavaScript, ReactJS, Tailwind, 
-              NextJS, NodeJS, bancos de dados como MySQL, PostgreSQL e MongoDB, Git e GitHub. 
-              Mas também tenho conhecimento em outras tecnologias como JAVA, C, Python, PHP e TypeScript.
+              Sou estudante de Tecnologia em Sistemas para Internet no IFSul – Campus Charqueadas, 
+              com foco em desenvolvimento web e criação de soluções digitais modernas e eficientes. 
+              Ao longo da minha trajetória, venho trabalhando com diversas tecnologias e acumulando 
+              experiências valiosas em projetos reais.
+            </p>
+            
+            <div className="text-lg">
+              <p className="mb-3">Tenho experiência com:</p>
+              <ul className="space-y-2 ml-6 list-disc">
+                <li><span className="font-medium text-primary-400">Front-end:</span> HTML, CSS, JavaScript, ReactJS, Next.js, Tailwind</li>
+                <li><span className="font-medium text-primary-400">Back-end:</span> Node.js, PHP</li>
+                <li><span className="font-medium text-primary-400">Bancos de dados:</span> MySQL, PostgreSQL, MongoDB</li>
+                <li><span className="font-medium text-primary-400">Versionamento:</span> Git e GitHub</li>
+              </ul>
+            </div>
+            
+            <p className="text-lg">
+              Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e TypeScript, 
+              o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.
             </p>
             
             <p className="text-lg">
-              Como profissional sou organizado, me comunico bem, trabalho bem em equipe. 
-              Tenho inglês intermediário, sou familiarizado com metodologias ágeis, 
-              conhecimentos sobre segurança da informação, inteligência artificial e open finance, 
-              boas práticas de desenvolvimento, comprometido com a entrega de resultados e sempre 
-              aberto a novos aprendizados.
+              Como profissional, sou organizado, comunicativo e colaborativo. Tenho inglês intermediário, 
+              sou familiarizado com metodologias ágeis, segurança da informação, inteligência artificial e 
+              Open Finance. Comprometido com a entrega de resultados de qualidade, estou sempre em busca 
+              de aprimoramento contínuo e aprendizado constante.
             </p>
           </div>
           
           <div className="mt-12 pt-8 border-t border-gray-800">
             <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-white">Tecnologias</h3>
-            <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {[
-                'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Tailwind',
-                'Node.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'Git', 'GitHub',
-                'Java', 'C', 'Python', 'PHP', 'TypeScript'
-              ].map((tech) => (
+            
+            {/* Legenda */}
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              <div className="flex items-center">
+                <div className="w-4 h-4 bg-blue-500/20 border border-blue-500 rounded-sm mr-2"></div>
+                <span className="text-sm text-gray-300">Básico</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-4 h-4 bg-green-500/20 border border-green-500 rounded-sm mr-2"></div>
+                <span className="text-sm text-gray-300">Intermediário</span>
+              </div>
+              <div className="flex items-center">
+                <div className="w-4 h-4 bg-purple-500/20 border border-purple-500 rounded-sm mr-2"></div>
+                <span className="text-sm text-gray-300">Avançado</span>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {technologies.map((tech) => (
                 <div 
-                  key={tech} 
-                  className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg px-3 py-2 
-                          text-center text-sm font-medium hover:bg-gray-800 hover:border-gray-600 
-                          transition-all"
+                  key={tech.name} 
+                  className={`bg-gray-800/50 backdrop-blur-sm border ${getLevelColorClass(tech.level)} rounded-lg px-3 py-2 
+                          text-center text-sm font-medium transition-all relative group`}
                 >
-                  {tech}
+                  <span>{tech.name}</span>
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center bg-gray-900/90 rounded-lg transition-opacity duration-200">
+                    <span className={`
+                      ${tech.level === 'Básico' ? 'text-blue-400' : ''}
+                      ${tech.level === 'Intermediário' ? 'text-green-400' : ''}
+                      ${tech.level === 'Avançado' ? 'text-purple-400' : ''}
+                      font-medium
+                    `}>{tech.name} – {tech.level}</span>
+                  </div>
                 </div>
               ))}
             </div>
