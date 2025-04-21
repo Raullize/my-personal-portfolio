@@ -1,5 +1,5 @@
 import { Inter, Poppins } from "next/font/google";
-import ClientWrapper from "./components/ui/ClientWrapper";
+import ClientRootWrapper from "./components/ui/ClientRootWrapper";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,6 +16,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Raul Lize | Desenvolvedor Web",
   description: "Portfólio profissional de Raul Lize, Desenvolvedor Web e estudante de Tecnologia em Sistemas para Internet.",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -24,10 +27,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${poppins.variable} font-sans bg-black text-gray-100`}
       >
-        <ClientWrapper>
+        <ClientRootWrapper>
           {children}
-        </ClientWrapper>
+        </ClientRootWrapper>
       </body>
     </html>
   );
-}
+} 
