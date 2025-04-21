@@ -6,32 +6,44 @@ const projects = [
   {
     title: 'Armazém Girassol',
     description: 'Plataforma de e-commerce para produtos naturais e orgânicos.',
-    imageUrl: '/projects/projeto-default.jpg'
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   },
   {
     title: 'StockDeps',
     description: 'Sistema de gerenciamento de estoque e inventário.',
-    imageUrl: '/projects/projeto-default.jpg'
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   },
   {
-    title: 'DepsModels',
-    description: 'Plataforma para gestão de projetos e modelos de desenvolvimento.',
-    imageUrl: '/projects/projeto-default.jpg'
+    title: 'DEPS Models',
+    description: 'Landing Page da empresa DEPS Models apresentando sua história, cultura e serviços oferecidos no mercado de desenvolvimento.',
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   },
   {
     title: 'octo.hub',
-    description: 'Hub de colaboração para desenvolvedores e equipes de tecnologia.',
-    imageUrl: '/projects/projeto-default.jpg'
+    description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   },
   {
     title: 'Psicóloga Karine Strapazon',
-    description: 'Website profissional para atendimento psicológico e agendamento de consultas.',
-    imageUrl: '/projects/projeto-default.jpg'
+    description: 'Portfólio profissional da psicóloga Karine Strapazon, com informações sobre sua abordagem terapêutica e serviços oferecidos.',
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   },
   {
-    title: 'MyGym',
-    description: 'Aplicação para gerenciamento de academias e acompanhamento de treinos.',
-    imageUrl: '/projects/projeto-default.jpg'
+    title: 'MyGYM',
+    description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
+    imageUrl: '/projects/projeto-default.jpg',
+    siteUrl: '',
+    githubUrl: ''
   }
 ];
 
@@ -67,6 +79,8 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               imageUrl={project.imageUrl}
+              siteUrl={project.siteUrl}
+              githubUrl={project.githubUrl}
             />
           ))}
         </div>
