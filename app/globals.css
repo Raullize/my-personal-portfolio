@@ -20,4 +20,28 @@
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
   }
+  
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .bg-size-200 {
+    background-size: 200% 200%;
+  }
+  
+  .animate-gradient {
+    animation: gradientMove 2s ease infinite;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
