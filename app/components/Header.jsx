@@ -34,7 +34,7 @@ const Header = () => {
         <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mb-8"></div>
         
         <p className="max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
-          Desenvolvendo interfaces modernas e soluções digitais eficientes, com foco em experiência do usuário e código de qualidade.
+          Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes
         </p>
         
         <div className="mt-12">
