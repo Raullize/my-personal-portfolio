@@ -4,7 +4,14 @@
 
 @layer base {
   html, body {
-    @apply bg-black text-gray-100;
+    @apply bg-black text-gray-100 scroll-smooth overflow-x-hidden;
+  }
+  
+  /* Melhorando a experiência em dispositivos móveis */
+  @media (max-width: 640px) {
+    html {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 }
 
@@ -14,7 +21,7 @@
   }
   
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-12 sm:py-16 md:py-24;
   }
   
   .gradient-text {
@@ -32,6 +39,21 @@
   .animate-gradient {
     animation: gradientMove 2s ease infinite;
   }
+  
+  /* Card patterns para consistência */
+  .card-base {
+    @apply bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-xl 
+           hover:border-gray-700 transition-all;
+  }
+  
+  /* Utilitários responsivos */
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6;
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
 @keyframes gradientMove {
@@ -43,5 +65,16 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(15px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }

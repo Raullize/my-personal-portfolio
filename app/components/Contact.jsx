@@ -1,4 +1,7 @@
+"use client";
+
 import DecryptedText from './ui/DecryptedText';
+import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 
 const contactInfo = [
@@ -52,62 +55,75 @@ const Contact = () => {
   return (
     <section id="contato" className="section-padding bg-black">
       <div className="container-wrapper">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
-            <GradientText
-              colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
-              animationSpeed={2.5}
-            >
-              Contato
-            </GradientText>
-          </h2>
-          <div className="text-lg text-gray-300">
-            <DecryptedText
-              text="Vamos conversar? Entre em contato comigo!"
-              speed={60}
-              maxIterations={10}
-              sequential={true}
-              revealDirection="start"
-              animateOn="view"
-            />
+        <FadeIn direction="up">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
+              <GradientText
+                colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
+                animationSpeed={2.5}
+              >
+                Contato
+              </GradientText>
+            </h2>
+            <div className="text-lg text-gray-300">
+              <DecryptedText
+                text="Vamos conversar? Entre em contato comigo!"
+                speed={60}
+                maxIterations={10}
+                sequential={true}
+                revealDirection="start"
+                animateOn="view"
+              />
+            </div>
           </div>
-        </div>
+        </FadeIn>
         
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {contactInfo.map((contact) => (
-              <a
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            {contactInfo.map((contact, index) => (
+              <FadeIn 
                 key={contact.id}
-                href={contact.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-6 rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm hover:bg-gray-900 hover:border-gray-700 transition-all"
+                direction={index % 2 === 0 ? 'left' : 'right'}
+                delay={0.2 + (index * 0.1)}
+                duration={0.6}
               >
-                <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-primary-600/10 text-primary-400">
-                  {contact.icon}
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium text-white mb-1">{contact.title}</h3>
-                  <p className="text-gray-400">{contact.value}</p>
-                </div>
-              </a>
+                <a
+                  href={contact.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 sm:gap-4 p-4 sm:p-6 rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm hover:bg-gray-900 hover:border-gray-700 transition-all"
+                >
+                  <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-primary-600/10 text-primary-400">
+                    {contact.icon}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base sm:text-lg font-medium text-white mb-0.5 sm:mb-1 truncate">{contact.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-400 truncate">{contact.value}</p>
+                  </div>
+                </a>
+              </FadeIn>
             ))}
           </div>
           
-          <div className="mt-16 text-center">
-            <p className="text-gray-400 mb-6">
-              Estou sempre aberto a novos desafios e oportunidades de colaboração.
-              <br />
-              Se você tem um projeto interessante ou uma oportunidade, não hesite em entrar em contato!
-            </p>
-            
-            <a
-              href="mailto:raullizeteixeira@gmail.com"
-              className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-white font-medium hover:from-primary-700 hover:to-accent-700 transition-colors"
-            >
-              Enviar mensagem
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.6}>
+            <div className="mt-12 md:mt-16 text-center">
+              <p className="text-gray-400 mb-6 text-balance">
+                Estou sempre aberto a novos desafios e oportunidades de colaboração.
+                <br className="hidden sm:block" />
+                Se você tem um projeto interessante ou uma oportunidade, não hesite em entrar em contato!
+              </p>
+              
+              <a
+                href="mailto:raullizeteixeira@gmail.com"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-white font-medium hover:from-primary-700 hover:to-accent-700 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Enviar mensagem
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

@@ -1,4 +1,7 @@
+"use client";
+
 import DecryptedText from './ui/DecryptedText';
+import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 import ProjectCard from './ui/ProjectCard';
 
@@ -51,37 +54,45 @@ const Projects = () => {
   return (
     <section id="projetos" className="section-padding bg-gradient-to-b from-black to-gray-900">
       <div className="container-wrapper">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
-            <GradientText
-              colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
-              animationSpeed={2.5}
-            >
-              Meus Projetos
-            </GradientText>
-          </h2>
-          <div className="text-lg text-gray-300">
-            <DecryptedText
-              text="Alguns dos projetos que desenvolvi ou participei"
-              speed={60}
-              maxIterations={10}
-              sequential={true}
-              revealDirection="start"
-              animateOn="view"
-            />
+        <FadeIn direction="up">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
+              <GradientText
+                colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
+                animationSpeed={2.5}
+              >
+                Meus Projetos
+              </GradientText>
+            </h2>
+            <div className="text-lg text-gray-300">
+              <DecryptedText
+                text="Alguns dos projetos que desenvolvi ou participei"
+                speed={60}
+                maxIterations={10}
+                sequential={true}
+                revealDirection="start"
+                animateOn="view"
+              />
+            </div>
           </div>
-        </div>
+        </FadeIn>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              siteUrl={project.siteUrl}
-              githubUrl={project.githubUrl}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+          {projects.map((project, index) => (
+            <FadeIn 
+              key={project.title} 
+              direction="up" 
+              delay={0.2 + (index * 0.1)} 
+              duration={0.5}
+            >
+              <ProjectCard
+                title={project.title}
+                description={project.description}
+                imageUrl={project.imageUrl}
+                siteUrl={project.siteUrl}
+                githubUrl={project.githubUrl}
+              />
+            </FadeIn>
           ))}
         </div>
       </div>

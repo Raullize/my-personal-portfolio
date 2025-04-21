@@ -2,6 +2,7 @@
 
 import CVDownload from './CVDownload';
 import LanguageToggle from './LanguageToggle';
+import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 import Squares from './ui/Squares';
 
@@ -52,39 +53,54 @@ const Header = () => {
       />
       
       <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-4 z-10">
-        <LanguageToggle />
-        <CVDownload />
+        <FadeIn direction="down" delay={0.5} duration={0.7}>
+          <LanguageToggle />
+        </FadeIn>
+        <FadeIn direction="down" delay={0.7} duration={0.7}>
+          <CVDownload />
+        </FadeIn>
       </div>
 
       <div className="relative z-10 container-wrapper flex flex-col items-center">
-        <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">DESENVOLVEDOR WEB</span>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading">
-          <GradientText 
-            colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
-            animationSpeed={2.5}
-          >
-            Raul Lize
-          </GradientText>
-        </h1>
+        <FadeIn direction="down" delay={0.2} duration={0.7}>
+          <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">DESENVOLVEDOR WEB</span>
+        </FadeIn>
         
-        <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mb-8"></div>
+        <FadeIn direction="up" delay={0.4} duration={0.8}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading">
+            <GradientText 
+              colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
+              animationSpeed={2.5}
+            >
+              Raul Lize
+            </GradientText>
+          </h1>
+        </FadeIn>
         
-        <p className="max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
-          Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes
-        </p>
+        <FadeIn direction="none" delay={0.6} duration={1}>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mb-8"></div>
+        </FadeIn>
         
-        <div className="mt-12">
-          <a 
-            href="#sobre" 
-            onClick={handleSmoothScroll}
-            className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 text-gray-400 hover:text-white hover:border-white transition-colors duration-300"
-            aria-label="Saiba mais"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-bounce-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </a>
-        </div>
+        <FadeIn direction="up" delay={0.8} duration={0.7}>
+          <p className="max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
+            Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes
+          </p>
+        </FadeIn>
+        
+        <FadeIn direction="up" delay={1} duration={0.7}>
+          <div className="mt-12">
+            <a 
+              href="#sobre" 
+              onClick={handleSmoothScroll}
+              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 text-gray-400 hover:text-white hover:border-white transition-colors duration-300"
+              aria-label="Saiba mais"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-bounce-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </a>
+          </div>
+        </FadeIn>
       </div>
     </header>
   );
