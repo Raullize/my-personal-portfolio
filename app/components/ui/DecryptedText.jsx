@@ -7,6 +7,7 @@ const styles = {
     wrapper: {
         display: 'inline-block',
         whiteSpace: 'pre-wrap',
+        maxWidth: '100%'
     },
     srOnly: {
         position: 'absolute',
@@ -204,7 +205,13 @@ export default function DecryptedText({
             : {}
 
     return (
-        <motion.span className={parentClassName} ref={containerRef} style={styles.wrapper} {...hoverProps} {...props}>
+        <motion.span 
+            className={`${parentClassName} whitespace-normal`} 
+            ref={containerRef} 
+            style={styles.wrapper} 
+            {...hoverProps} 
+            {...props}
+        >
             <span style={styles.srOnly}>{displayText}</span>
 
             <span aria-hidden="true">

@@ -50,7 +50,7 @@ const About = () => {
   return (
     <section id="sobre" className="section-padding bg-gradient-to-b from-gray-900 to-black">
       <div className="container-wrapper">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <FadeIn direction="up">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
@@ -61,7 +61,7 @@ const About = () => {
                   Olá
                 </GradientText>
               </h2>
-              <div className="text-lg md:text-xl font-medium text-gray-300">
+              <div className="text-lg md:text-xl font-medium text-gray-300 responsive-text">
                 <DecryptedText
                   text="Bem-vindo(a) ao meu portfólio!"
                   speed={60}
@@ -76,7 +76,7 @@ const About = () => {
           
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <FadeIn direction="up" delay={0.2}>
-              <p className="text-lg text-balance">
+              <p className="text-lg responsive-text">
                 Sou estudante de Tecnologia em Sistemas para Internet no IFSul – Campus Charqueadas, 
                 com foco em desenvolvimento web e criação de soluções digitais modernas e eficientes. 
                 Ao longo da minha trajetória, venho trabalhando com diversas tecnologias e acumulando 
@@ -85,7 +85,7 @@ const About = () => {
             </FadeIn>
             
             <FadeIn direction="up" delay={0.3}>
-              <div className="text-lg">
+              <div className="text-lg responsive-text">
                 <p className="mb-3">Tenho experiência com:</p>
                 <ul className="space-y-2 ml-6 list-disc">
                   <li><span className="font-medium text-primary-400">Front-end:</span> HTML, CSS, JavaScript, ReactJS, Next.js, Tailwind</li>
@@ -97,14 +97,14 @@ const About = () => {
             </FadeIn>
             
             <FadeIn direction="up" delay={0.4}>
-              <p className="text-lg text-balance">
+              <p className="text-lg responsive-text">
                 Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e TypeScript, 
                 o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.
               </p>
             </FadeIn>
             
             <FadeIn direction="up" delay={0.5}>
-              <p className="text-lg text-balance">
+              <p className="text-lg responsive-text">
                 Como profissional, sou organizado, comunicativo e colaborativo. Tenho inglês intermediário, 
                 sou familiarizado com metodologias ágeis, segurança da informação, inteligência artificial e 
                 Open Finance. Comprometido com a entrega de resultados de qualidade, estou sempre em busca 

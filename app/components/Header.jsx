@@ -52,11 +52,11 @@ const Header = () => {
         hoverFillColor='rgba(99, 102, 241, 0.2)'
       />
       
-      <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-4 z-10">
-        <FadeIn direction="down" delay={0.5} duration={0.7}>
+      <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-3 z-10">
+        <FadeIn direction="down" delay={0.2} duration={0.5} forceVisible={true} className="block">
           <LanguageToggle />
         </FadeIn>
-        <FadeIn direction="down" delay={0.7} duration={0.7}>
+        <FadeIn direction="down" delay={0.2} duration={0.5} forceVisible={true} className="block">
           <CVDownload />
         </FadeIn>
       </div>
@@ -67,7 +67,7 @@ const Header = () => {
         </FadeIn>
         
         <FadeIn direction="up" delay={0.4} duration={0.8}>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading whitespace-nowrap">
             <GradientText 
               colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
               animationSpeed={2.5}
@@ -82,7 +82,7 @@ const Header = () => {
         </FadeIn>
         
         <FadeIn direction="up" delay={0.8} duration={0.7}>
-          <p className="max-w-2xl text-lg md:text-xl text-gray-300 leading-relaxed">
+          <p className="responsive-text text-lg md:text-xl text-gray-300 leading-relaxed">
             Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes
           </p>
         </FadeIn>

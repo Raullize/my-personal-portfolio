@@ -51,8 +51,20 @@
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6;
   }
   
+  /* Melhor controle de quebra de texto */
   .text-balance {
     text-wrap: balance;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  
+  /* Textos responsivos sem quebras estranhas */
+  .responsive-text {
+    @apply max-w-full md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 }
 

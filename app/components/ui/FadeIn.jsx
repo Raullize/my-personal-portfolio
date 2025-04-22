@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const FadeIn = ({ 
   children, 
@@ -10,10 +10,24 @@ const FadeIn = ({
   duration = 0.5, 
   className = '',
   distance = 50,
-  once = true 
+  once = true,
+  threshold = 0.1,
+  forceVisible = false
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once });
+  const isInView = useInView(ref, { once, threshold });
+  const [shouldRender, setShouldRender] = useState(forceVisible);
+  
+  // Força a visibilidade em telas pequenas ou quando explicitamente solicitado
+  useEffect(() => {
+    // Verifica se é mobile na primeira renderização
+    const isMobile = window.innerWidth < 768;
+    if (isMobile || forceVisible) {
+      setShouldRender(true);
+    } else {
+      setShouldRender(isInView);
+    }
+  }, [isInView, forceVisible]);
   
   // Direções possíveis de entrada
   const getDirection = () => {
@@ -40,7 +54,7 @@ const FadeIn = ({
         opacity: 0,
         ...getDirection()
       }}
-      animate={isInView ? {
+      animate={shouldRender ? {
         opacity: 1, 
         y: 0, 
         x: 0
@@ -51,6 +65,10 @@ const FadeIn = ({
         ease: 'easeOut'
       }}
       className={className}
+      style={{ 
+        display: 'block',
+        willChange: 'opacity, transform'
+      }}
     >
       {children}
     </motion.div>
