@@ -55,13 +55,19 @@ const Timeline = () => {
         </FadeIn>
 
         {/* Timeline para desktop */}
-        <div className="hidden md:block relative">
+        <div className="hidden md:block relative py-8">
           {/* Linha central da timeline */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-primary-600 to-accent-600"></div>
 
-          <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 gap-32">
             {timelineItems.map((item, index) => (
               <div key={item.year} className="relative">
+                {/* Círculo na linha */}
+                <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>
+                  <div className="absolute w-4 h-4 bg-gray-900 rounded-full"></div>
+                </div>
+
                 <div className={`flex items-center ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
                   {/* Conteúdo */}
                   <FadeIn 
@@ -77,14 +83,6 @@ const Timeline = () => {
                       <p className="text-gray-300">{item.description}</p>
                     </div>
                   </FadeIn>
-
-                  {/* Círculo central */}
-                  <FadeIn delay={0.3 + (0.1 * index)} duration={0.4} direction="none">
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full z-10 flex items-center justify-center">
-                      <div className="w-6 h-6 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse"></div>
-                      <div className="absolute w-3 h-3 bg-gray-900 rounded-full"></div>
-                    </div>
-                  </FadeIn>
                 </div>
               </div>
             ))}
@@ -92,20 +90,18 @@ const Timeline = () => {
         </div>
 
         {/* Timeline para mobile */}
-        <div className="md:hidden relative">
+        <div className="md:hidden relative py-8">
           {/* Linha vertical da timeline */}
           <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-primary-600 to-accent-600"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-32">
             {timelineItems.map((item, index) => (
               <div key={item.year} className="relative pl-12">
-                {/* Círculo */}
-                <FadeIn delay={0.2 + (0.1 * index)} duration={0.5} direction="none">
-                  <div className="absolute left-4 top-6 transform -translate-x-1/2 w-7 h-7 flex items-center justify-center">
-                    <div className="w-7 h-7 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 absolute animate-pulse"></div>
-                    <div className="w-3.5 h-3.5 bg-gray-900 rounded-full absolute"></div>
-                  </div>
-                </FadeIn>
+                {/* Círculo na linha */}
+                <div className="absolute left-4 top-8 transform -translate-x-1/2 z-10 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>
+                  <div className="absolute w-4 h-4 bg-gray-900 rounded-full"></div>
+                </div>
                 
                 <FadeIn direction="left" delay={0.3 + (0.1 * index)}>
                   <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-xl p-6">
