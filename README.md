@@ -29,25 +29,31 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
 /app
   /components
     /ui
+      AppWrapper.jsx
+      ClickSpark.jsx
+      ClientRootWrapper.jsx
+      DecryptedText.jsx
+      FadeIn.jsx
       GradientText.jsx
+      LoadingScreen.jsx
       ProjectCard.jsx
       ScrollToTop.jsx
       SmoothScroll.jsx
-    Header.jsx
+      Squares.jsx
     About.jsx
-    Timeline.jsx
-    Projects.jsx
     Contact.jsx
-    Footer.jsx
-    LanguageToggle.jsx
     CVDownload.jsx
+    Footer.jsx
+    Header.jsx
+    LanguageToggle.jsx
+    Projects.jsx
+    Timeline.jsx
   /hooks
     useThemeToggle.js
-  /lib
-    formatDate.js
+  favicon.ico
+  globals.css
   layout.jsx
   page.jsx
-  globals.css
 ```
 
 ## 📱 Seções do Portfólio
@@ -63,12 +69,11 @@ Uma linha do tempo interativa mostrando minha jornada profissional desde 2023 at
 
 ### 💻 Projetos
 Cards interativos apresentando os principais projetos que desenvolvi:
-- Armazém Girassol
-- StockDeps
-- DepsModels
-- octo.hub
-- Psicóloga Karine Strapazon
-- MyGym
+- Armazém Girassol - [GitHub](https://github.com/depsModels/armazem-girassol)
+- StockDeps - [GitHub](https://github.com/depsModels/stockDeps)
+- DepsModels - [GitHub](https://github.com/depsModels/deps)
+- octo.hub - [GitHub](https://github.com/depsModels/octoHub)
+- MyGym - [GitHub](https://github.com/depsModels/MyGYM)
 
 ### 📞 Contato
 Todos os canais para entrar em contato comigo:
