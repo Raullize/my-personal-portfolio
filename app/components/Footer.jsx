@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslation } from '../i18n/useTranslation';
 import FadeIn from './ui/FadeIn';
 
 const Footer = () => {
+  const { t, language } = useTranslation();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
           <FadeIn direction="left">
             <div className="mb-0 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-white">Raul Lize</h3>
-              <p className="text-gray-400 mt-1 text-sm sm:text-base">Desenvolvedor Web</p>
+              <p className="text-gray-400 mt-1 text-sm sm:text-base">{t('jobTitle')}</p>
             </div>
           </FadeIn>
           
@@ -48,13 +50,13 @@ const Footer = () => {
         
         <FadeIn direction="up" delay={0.3}>
           <div className="mt-6 pt-6 sm:mt-8 sm:pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-xs sm:text-sm mb-4 md:mb-0">&copy; {currentYear} Raul Lize. Todos os direitos reservados.</p>
+            <p className="text-gray-500 text-xs sm:text-sm mb-4 md:mb-0">&copy; {currentYear} {t('developedBy')}. {t('allRightsReserved')}.</p>
             
             <nav aria-label="Links rápidos do rodapé">
               <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                <li><a href="#sobre" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">Sobre</a></li>
-                <li><a href="#projetos" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">Projetos</a></li>
-                <li><a href="#contato" className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">Contato</a></li>
+                <li><a href={`#${language === 'pt-BR' ? 'sobre' : 'about'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('about')}</a></li>
+                <li><a href={`#${language === 'pt-BR' ? 'projetos' : 'projects'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('projects')}</a></li>
+                <li><a href={`#${language === 'pt-BR' ? 'contato' : 'contact'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('contact')}</a></li>
               </ul>
             </nav>
           </div>

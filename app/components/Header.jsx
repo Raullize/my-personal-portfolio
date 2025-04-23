@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from '../i18n/useTranslation';
 import CVDownload from './CVDownload';
 import LanguageToggle from './LanguageToggle';
 import FadeIn from './ui/FadeIn';
@@ -7,6 +8,8 @@ import GradientText from './ui/GradientText';
 import Squares from './ui/Squares';
 
 const Header = () => {
+  const { t } = useTranslation();
+  
   // Função para lidar com o scroll suave diretamente no componente Header
   const handleSmoothScroll = (e) => {
     e.preventDefault();
@@ -62,7 +65,7 @@ const Header = () => {
 
       <div className="relative z-10 container-wrapper flex flex-col items-center">
         <FadeIn direction="down" delay={0.2} duration={0.7}>
-          <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">DESENVOLVEDOR WEB</span>
+          <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">{t('jobTitle')}</span>
         </FadeIn>
         
         <FadeIn direction="up" delay={0.4} duration={0.8}>
@@ -82,7 +85,7 @@ const Header = () => {
         
         <FadeIn direction="up" delay={0.8} duration={0.7}>
           <p className="responsive-text text-lg md:text-xl text-gray-300 leading-relaxed">
-            Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes
+            {t('tagline')}
           </p>
         </FadeIn>
         
@@ -92,7 +95,7 @@ const Header = () => {
               href="#sobre" 
               onClick={handleSmoothScroll}
               className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 text-gray-400 hover:text-white hover:border-white transition-colors duration-300"
-              aria-label="Saiba mais"
+              aria-label={t('seeMore')}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 animate-bounce-slow" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

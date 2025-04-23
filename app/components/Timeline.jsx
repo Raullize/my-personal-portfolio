@@ -1,35 +1,38 @@
 "use client";
 
+import { useTranslation } from '../i18n/useTranslation';
 import DecryptedText from './ui/DecryptedText';
 import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 
-const timelineItems = [
-  {
-    year: '2023',
-    title: 'Ensino Médio Técnico',
-    description: 'Conclusão do curso técnico em Informática, onde tive meus primeiros contatos com linguagens de programação e participei de projetos escolares que me permitiram aplicar na prática os conhecimentos adquiridos em sala de aula.'
-  },
-  {
-    year: '2024',
-    title: 'DEPS Models',
-    description: 'Participei da estruturação da DEPS Models, uma iniciativa que me proporcionou experiência real com clientes e projetos de verdade. Atuei em todas as etapas do desenvolvimento, utilizando metodologias ágeis, participando de reuniões com stakeholders e contribuindo tanto no front-end quanto no back-end das aplicações.'
-  },
-  {
-    year: '2025',
-    title: 'Compass UOL',
-    description: 'Fui selecionado para a bolsa Scholarship Open Finance da Compass UOL, onde aprofundei meus conhecimentos em desenvolvimento com foco em JavaScript e Node.js. Essa experiência tem sido essencial para meu crescimento profissional em um ambiente dinâmico e voltado à inovação financeira.'
-  },
-  {
-    year: 'Atualmente',
-    title: 'Em busca de novas oportunidades',
-    description: 'Sigo aberto a oportunidades que não apenas contribuam para o meu desenvolvimento, mas que também me permitam gerar valor com os conhecimentos que venho construindo ao longo da minha trajetória.'
-  }
-];
-
 const Timeline = () => {
+  const { t, language } = useTranslation();
+  
+  const timelineItems = [
+    {
+      year: '2023',
+      title: t('timeline2023Title'),
+      description: t('timeline2023Description')
+    },
+    {
+      year: '2024',
+      title: t('timeline2024Title'),
+      description: t('timeline2024Description')
+    },
+    {
+      year: '2025',
+      title: t('timeline2025Title'),
+      description: t('timeline2025Description')
+    },
+    {
+      year: language === 'pt-BR' ? 'Atualmente' : 'Currently',
+      title: t('timelineNowTitle'),
+      description: t('timelineNowDescription')
+    }
+  ];
+  
   return (
-    <section className="section-padding bg-black text-white">
+    <section id={language === 'pt-BR' ? 'trajetoria' : 'journey'} className="section-padding bg-black text-white">
       <div className="container-wrapper">
         <FadeIn direction="up">
           <div className="text-center mb-16">
@@ -38,12 +41,12 @@ const Timeline = () => {
                 colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
                 animationSpeed={2.5}
               >
-                Minha Trajetória
+                {t('timelineTitle')}
               </GradientText>
             </h2>
             <div className="text-lg text-gray-300">
               <DecryptedText
-                text="Um breve resumo da minha jornada como desenvolvedor"
+                text={t('timelineDescription')}
                 speed={60}
                 maxIterations={10}
                 sequential={true}
@@ -61,7 +64,7 @@ const Timeline = () => {
 
           <div className="grid grid-cols-1 gap-32">
             {timelineItems.map((item, index) => (
-              <div key={item.year} className="relative">
+              <div key={index} className="relative">
                 {/* Círculo na linha */}
                 <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>
@@ -96,7 +99,7 @@ const Timeline = () => {
 
           <div className="space-y-32">
             {timelineItems.map((item, index) => (
-              <div key={item.year} className="relative pl-12">
+              <div key={index} className="relative pl-12">
                 {/* Círculo na linha */}
                 <div className="absolute left-4 top-8 transform -translate-x-1/2 z-10 flex items-center justify-center">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>

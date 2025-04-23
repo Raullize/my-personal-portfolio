@@ -1,54 +1,57 @@
 "use client";
 
+import { useTranslation } from '../i18n/useTranslation';
 import DecryptedText from './ui/DecryptedText';
 import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 
 // Definindo as tecnologias com seus níveis
 const technologies = [
-  { name: 'HTML', level: 'Avançado' },
-  { name: 'CSS', level: 'Intermediário' },
-  { name: 'JavaScript', level: 'Intermediário' },
-  { name: 'React', level: 'Básico' },
-  { name: 'Next.js', level: 'Básico' },
-  { name: 'Tailwind', level: 'Básico' },
-  { name: 'Node.js', level: 'Básico' },
-  { name: 'MySQL', level: 'Básico' },
-  { name: 'PostgreSQL', level: 'Básico' },
-  { name: 'MongoDB', level: 'Básico' },
-  { name: 'Git', level: 'Intermediário' },
-  { name: 'GitHub', level: 'Intermediário' },
-  { name: 'Java', level: 'Básico' },
-  { name: 'C', level: 'Básico' },
-  { name: 'Python', level: 'Básico' },
-  { name: 'PHP', level: 'Básico' },
-  { name: 'TypeScript', level: 'Básico' },
+  { name: 'HTML', level: 'advanced' },
+  { name: 'CSS', level: 'intermediate' },
+  { name: 'JavaScript', level: 'intermediate' },
+  { name: 'React', level: 'basic' },
+  { name: 'Next.js', level: 'basic' },
+  { name: 'Tailwind', level: 'basic' },
+  { name: 'Node.js', level: 'basic' },
+  { name: 'MySQL', level: 'basic' },
+  { name: 'PostgreSQL', level: 'basic' },
+  { name: 'MongoDB', level: 'basic' },
+  { name: 'Git', level: 'intermediate' },
+  { name: 'GitHub', level: 'intermediate' },
+  { name: 'Java', level: 'basic' },
+  { name: 'C', level: 'basic' },
+  { name: 'Python', level: 'basic' },
+  { name: 'PHP', level: 'basic' },
+  { name: 'TypeScript', level: 'basic' },
 ];
 
-// Função para determinar a classe de cor com base no nível
-const getLevelColorClass = (level) => {
-  switch (level) {
-    case 'Básico':
-      return 'border-blue-500 hover:bg-blue-500/10';
-    case 'Intermediário':
-      return 'border-green-500 hover:bg-green-500/10';
-    case 'Avançado':
-      return 'border-purple-500 hover:bg-purple-500/10';
-    default:
-      return 'border-gray-700';
-  }
-};
-
-// Agrupando tecnologias por nível para melhor organização visual
-const groupedTechnologies = {
-  advanced: technologies.filter(tech => tech.level === 'Avançado'),
-  intermediate: technologies.filter(tech => tech.level === 'Intermediário'),
-  basic: technologies.filter(tech => tech.level === 'Básico')
-};
-
 const About = () => {
+  const { t, language } = useTranslation();
+
+  // Função para determinar a classe de cor com base no nível
+  const getLevelColorClass = (level) => {
+    switch (level) {
+      case 'basic':
+        return 'border-blue-500 hover:bg-blue-500/10';
+      case 'intermediate':
+        return 'border-green-500 hover:bg-green-500/10';
+      case 'advanced':
+        return 'border-purple-500 hover:bg-purple-500/10';
+      default:
+        return 'border-gray-700';
+    }
+  };
+
+  // Agrupando tecnologias por nível para melhor organização visual
+  const groupedTechnologies = {
+    advanced: technologies.filter(tech => tech.level === 'advanced'),
+    intermediate: technologies.filter(tech => tech.level === 'intermediate'),
+    basic: technologies.filter(tech => tech.level === 'basic')
+  };
+
   return (
-    <section id="sobre" className="section-padding bg-gradient-to-b from-gray-900 to-black">
+    <section id={language === 'pt-BR' ? 'sobre' : 'about'} className="section-padding bg-gradient-to-b from-gray-900 to-black">
       <div className="container-wrapper">
         <div className="max-w-5xl mx-auto">
           <FadeIn direction="up">
@@ -58,12 +61,12 @@ const About = () => {
                   colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
                   animationSpeed={2.5}
                 >
-                  Olá
+                  {t('aboutTitle')}
                 </GradientText>
               </h2>
               <div className="text-lg md:text-xl font-medium text-gray-300 responsive-text">
                 <DecryptedText
-                  text="Bem-vindo(a) ao meu portfólio!"
+                  text={t('aboutSubtitle')}
                   speed={60}
                   maxIterations={10}
                   sequential={true}
@@ -77,59 +80,52 @@ const About = () => {
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <FadeIn direction="up" delay={0.2}>
               <p className="text-lg responsive-text">
-                Sou estudante de Tecnologia em Sistemas para Internet no IFSul – Campus Charqueadas, 
-                com foco em desenvolvimento web e criação de soluções digitais modernas e eficientes. 
-                Ao longo da minha trajetória, venho trabalhando com diversas tecnologias e acumulando 
-                experiências valiosas em projetos reais.
+                {t('aboutIntro')}
               </p>
             </FadeIn>
             
             <FadeIn direction="up" delay={0.3}>
               <div className="text-lg responsive-text">
-                <p className="mb-3">Tenho experiência com:</p>
+                <p className="mb-3">{t('experienceTitle')}</p>
                 <ul className="space-y-2 ml-6 list-disc">
-                  <li><span className="font-medium text-primary-400">Front-end:</span> HTML, CSS, JavaScript, ReactJS, Next.js, Tailwind</li>
-                  <li><span className="font-medium text-primary-400">Back-end:</span> Node.js, PHP</li>
-                  <li><span className="font-medium text-primary-400">Bancos de dados:</span> MySQL, PostgreSQL, MongoDB</li>
-                  <li><span className="font-medium text-primary-400">Versionamento:</span> Git e GitHub</li>
+                  <li><span className="font-medium text-primary-400">{t('frontendSkills').split(':')[0]}:</span> {t('frontendSkills').split(':')[1]}</li>
+                  <li><span className="font-medium text-primary-400">{t('backendSkills').split(':')[0]}:</span> {t('backendSkills').split(':')[1]}</li>
+                  <li><span className="font-medium text-primary-400">{t('databaseSkills').split(':')[0]}:</span> {t('databaseSkills').split(':')[1]}</li>
+                  <li><span className="font-medium text-primary-400">{t('versioningSkills').split(':')[0]}:</span> {t('versioningSkills').split(':')[1]}</li>
                 </ul>
               </div>
             </FadeIn>
             
             <FadeIn direction="up" delay={0.4}>
               <p className="text-lg responsive-text">
-                Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e TypeScript, 
-                o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.
+                {t('otherSkills')}
               </p>
             </FadeIn>
             
             <FadeIn direction="up" delay={0.5}>
               <p className="text-lg responsive-text">
-                Como profissional, sou organizado, comunicativo e colaborativo. Tenho inglês intermediário, 
-                sou familiarizado com metodologias ágeis, segurança da informação, inteligência artificial e 
-                Open Finance. Comprometido com a entrega de resultados de qualidade, estou sempre em busca 
-                de aprimoramento contínuo e aprendizado constante.
+                {t('professionalProfile')}
               </p>
             </FadeIn>
           </div>
           
           <FadeIn direction="up" delay={0.6}>
             <div className="mt-12 pt-8 border-t border-gray-800">
-              <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-white">Tecnologias</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-white">{t('technologies')}</h3>
               
               {/* Legenda */}
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 <div className="flex items-center">
                   <div className="w-4 h-4 bg-blue-500/20 border border-blue-500 rounded-sm mr-2"></div>
-                  <span className="text-sm text-gray-300">Básico</span>
+                  <span className="text-sm text-gray-300">{t('basic')}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-4 h-4 bg-green-500/20 border border-green-500 rounded-sm mr-2"></div>
-                  <span className="text-sm text-gray-300">Intermediário</span>
+                  <span className="text-sm text-gray-300">{t('intermediate')}</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-4 h-4 bg-purple-500/20 border border-purple-500 rounded-sm mr-2"></div>
-                  <span className="text-sm text-gray-300">Avançado</span>
+                  <span className="text-sm text-gray-300">{t('advanced')}</span>
                 </div>
               </div>
               
@@ -141,8 +137,7 @@ const About = () => {
                       levelKey === 'advanced' ? 'text-purple-400' : 
                       levelKey === 'intermediate' ? 'text-green-400' : 'text-blue-400'
                     }`}>
-                      {levelKey === 'advanced' ? 'Avançado' : 
-                       levelKey === 'intermediate' ? 'Intermediário' : 'Básico'}
+                      {t(levelKey)}
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
                       {techs.map((tech, index) => (
@@ -168,11 +163,11 @@ const About = () => {
                       <span>{tech.name}</span>
                       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 flex items-center justify-center bg-gray-900/90 rounded-lg transition-opacity duration-200">
                         <span className={`
-                          ${tech.level === 'Básico' ? 'text-blue-400' : ''}
-                          ${tech.level === 'Intermediário' ? 'text-green-400' : ''}
-                          ${tech.level === 'Avançado' ? 'text-purple-400' : ''}
+                          ${tech.level === 'basic' ? 'text-blue-400' : ''}
+                          ${tech.level === 'intermediate' ? 'text-green-400' : ''}
+                          ${tech.level === 'advanced' ? 'text-purple-400' : ''}
                           font-medium
-                        `}>{tech.name} – {tech.level}</span>
+                        `}>{tech.name} – {t(tech.level)}</span>
                       </div>
                     </div>
                   </FadeIn>
