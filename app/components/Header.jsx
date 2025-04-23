@@ -43,7 +43,6 @@ const Header = () => {
 
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-5"></div>
       <Squares 
         speed={0.5} 
         squareSize={40}
