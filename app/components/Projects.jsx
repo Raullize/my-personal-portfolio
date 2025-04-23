@@ -39,7 +39,7 @@ const projects = [
     description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
     imageUrl: '/projects/projeto-default.jpg',
     siteUrl: '',
-    githubUrl: ''
+    githubUrl: 'https://github.com/depsModels/MyGYM'
   }
 ];
 
