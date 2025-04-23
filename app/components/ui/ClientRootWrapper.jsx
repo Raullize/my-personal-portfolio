@@ -14,7 +14,13 @@ const ClientRootWrapper = ({ children }) => {
   return (
     <>
       <LoadingScreen onLoadingComplete={handleLoadingComplete} />
-      <div style={{ visibility: isLoading ? 'hidden' : 'visible' }}>
+      <div 
+        style={{ 
+          visibility: isLoading ? 'hidden' : 'visible',
+          overflow: 'hidden'
+        }}
+        className="w-full overflow-x-hidden"
+      >
         <ClickSpark
           sparkColor="#6366f1"
           sparkSize={10}

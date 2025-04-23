@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR" className="dark">
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans bg-black text-gray-100`}
+        className={`${inter.variable} ${poppins.variable} font-sans bg-black text-gray-100 overflow-x-hidden min-h-screen`}
       >
         <ClientRootWrapper>
           {children}

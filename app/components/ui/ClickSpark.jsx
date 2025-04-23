@@ -145,7 +145,8 @@ const ClickSpark = ({
         <div style={{
             width:"100%",
             height:"100%",
-            position:"relative"
+            position:"relative",
+            overflow:"hidden"
         }}
         onClick={handleClick}
         >
