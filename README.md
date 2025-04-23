@@ -1,4 +1,5 @@
 # 🚀 Portfólio Pessoal | Raul Lize
+[![en](https://img.shields.io/badge/lang-en-red.svg)](./README.en.md)
 
 ## 📋 Sobre o Projeto
 
@@ -85,12 +86,12 @@ Todos os canais para entrar em contato comigo:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/Raullize/personal-portfolio.git
+git clone <url-do-repositorio>
 ```
 
 2. Instale as dependências:
 ```bash
-cd personal-portfolio
+cd <nome-da-pasta>
 npm install
 ```
 
@@ -103,7 +104,7 @@ npm run dev
 
 ## 🔮 Futuras Implementações
 
-- 🌓 Modo claro/escuro (ainda não implementado)
+- ✅ Modo claro/escuro
 - ✅ Blog integrado
 - ✅ Mais projetos e detalhes de caso de uso
 
