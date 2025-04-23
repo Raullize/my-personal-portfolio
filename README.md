@@ -73,7 +73,7 @@ Cards interativos apresentando os principais projetos que desenvolvi:
 - StockDeps - [GitHub](https://github.com/depsModels/stockDeps)
 - DepsModels - [GitHub](https://github.com/depsModels/deps) | [Site](https://depsmodels.com)
 - octo.hub - [GitHub](https://github.com/depsModels/octoHub)
-- MyGym - [GitHub](https://github.com/depsModels/MyGYM) | [Site](https://my-gym-gold.vercel.app)
+- MyGym - [GitHub](https://github.com/depsModels/MyGym) | [Site](https://my-gym-academy.vercel.app)
 
 ### 📞 Contato
 Todos os canais para entrar em contato comigo:
