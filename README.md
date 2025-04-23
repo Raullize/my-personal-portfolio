@@ -69,11 +69,11 @@ Uma linha do tempo interativa mostrando minha jornada profissional desde 2023 at
 
 ### 💻 Projetos
 Cards interativos apresentando os principais projetos que desenvolvi:
-- Armazém Girassol - [GitHub](https://github.com/depsModels/armazem-girassol)
+- Armazém Girassol - [GitHub](https://github.com/depsModels/armazem-girassol) | [Site](https://www.armazemgirassol.com.br)
 - StockDeps - [GitHub](https://github.com/depsModels/stockDeps)
-- DepsModels - [GitHub](https://github.com/depsModels/deps)
+- DepsModels - [GitHub](https://github.com/depsModels/deps) | [Site](https://depsmodels.com)
 - octo.hub - [GitHub](https://github.com/depsModels/octoHub)
-- MyGym - [GitHub](https://github.com/depsModels/MyGYM)
+- MyGym - [GitHub](https://github.com/depsModels/MyGYM) | [Site](https://my-gym-gold.vercel.app)
 
 ### 📞 Contato
 Todos os canais para entrar em contato comigo:

@@ -38,7 +38,7 @@ const projects = [
     title: 'MyGYM',
     description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
     imageUrl: '/projects/projeto-default.jpg',
-    siteUrl: '',
+    siteUrl: 'https://my-gym-gold.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGYM'
   }
 ];
