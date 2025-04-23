@@ -50,8 +50,8 @@ const projectsData = [
     description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
     description_en: 'Landing Page designed for gyms without digital presence, providing information about services, plans and opening hours.',
     imageUrl: '/projects/MyGym.png',
-    siteUrl: 'https://my-gym-gold.vercel.app',
-    githubUrl: 'https://github.com/depsModels/MyGYM'
+    siteUrl: 'https://my-gym-academy.vercel.app',
+    githubUrl: 'https://github.com/depsModels/MyGym'
   }
 ];
 
