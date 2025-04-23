@@ -29,7 +29,6 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
 /app
   /components
     /ui
-      AppWrapper.jsx
       ClickSpark.jsx
       ClientRootWrapper.jsx
       DecryptedText.jsx
@@ -49,7 +48,7 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
     Projects.jsx
     Timeline.jsx
   /hooks
-    useThemeToggle.js
+    useLanguage.js
   favicon.ico
   globals.css
   layout.jsx
@@ -104,7 +103,7 @@ npm run dev
 
 ## 🔮 Futuras Implementações
 
-- ✅ Modo claro/escuro
+- 🌓 Modo claro/escuro (ainda não implementado)
 - ✅ Blog integrado
 - ✅ Mais projetos e detalhes de caso de uso
 
