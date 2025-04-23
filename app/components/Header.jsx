@@ -9,40 +9,6 @@ import Squares from './ui/Squares';
 
 const Header = () => {
   const { t } = useTranslation();
-  
-  // Função para lidar com o scroll suave diretamente no componente Header
-  const handleSmoothScroll = (e) => {
-    e.preventDefault();
-    
-    const targetId = e.currentTarget.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-    
-    if (targetElement) {
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-      const startY = window.scrollY;
-      const difference = targetPosition - startY;
-      let startTime = null;
-      const duration = Math.min(1000 + Math.abs(difference) * 0.5, 2000); // Entre 1s e 2s
-      
-      // Função para calcular a posição do scroll em cada frame
-      const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-      
-      function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
-        const easedProgress = easeInOutQuad(progress);
-        
-        window.scrollTo(0, startY + difference * easedProgress);
-        
-        if (timeElapsed < duration) {
-          requestAnimationFrame(animation);
-        }
-      }
-      
-      requestAnimationFrame(animation);
-    }
-  };
 
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 py-12 bg-gradient-to-b from-black to-gray-900 overflow-hidden">
@@ -93,7 +59,6 @@ const Header = () => {
           <div className="mt-12">
             <a 
               href="#sobre" 
-              onClick={handleSmoothScroll}
               className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-600 text-gray-400 hover:text-white hover:border-white transition-colors duration-300"
               aria-label={t('seeMore')}
             >

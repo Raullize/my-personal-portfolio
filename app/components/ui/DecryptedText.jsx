@@ -41,6 +41,18 @@ export default function DecryptedText({
     const [revealedIndices, setRevealedIndices] = useState(new Set())
     const [hasAnimated, setHasAnimated] = useState(false)
     const containerRef = useRef(null)
+    const prevTextRef = useRef(text)
+
+    useEffect(() => {
+        if (prevTextRef.current !== text) {
+            setDisplayText(text)
+            if (!isScrambling) {
+                setRevealedIndices(new Set())
+                setHasAnimated(false)
+            }
+            prevTextRef.current = text
+        }
+    }, [text, isScrambling])
 
     useEffect(() => {
         let interval;
@@ -177,13 +189,12 @@ export default function DecryptedText({
             })
         }
 
-        const observerOptions = {
+        const observer = new IntersectionObserver(observerCallback, {
             root: null,
             rootMargin: '0px',
             threshold: 0.1,
-        }
-
-        const observer = new IntersectionObserver(observerCallback, observerOptions)
+        })
+        
         const currentRef = containerRef.current
         if (currentRef) {
             observer.observe(currentRef)
@@ -196,13 +207,12 @@ export default function DecryptedText({
         }
     }, [animateOn, hasAnimated])
 
-    const hoverProps =
-        animateOn === 'hover'
-            ? {
-                onMouseEnter: () => setIsHovering(true),
-                onMouseLeave: () => setIsHovering(false),
-            }
-            : {}
+    const hoverProps = animateOn === 'hover'
+        ? {
+            onMouseEnter: () => setIsHovering(true),
+            onMouseLeave: () => setIsHovering(false),
+        }
+        : {}
 
     return (
         <motion.span 
