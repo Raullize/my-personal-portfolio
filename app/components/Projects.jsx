@@ -9,35 +9,35 @@ const projects = [
   {
     title: 'Armazém Girassol',
     description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
-    imageUrl: '/projects/projeto-default.jpg',
+    imageUrl: '/projects/ArmazemGirassol.png',
     siteUrl: 'https://www.armazemgirassol.com.br',
     githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
   {
     title: 'StockDeps',
-    description: 'Sistema avançado de gerenciamento de estoque e inventário, desenvolvido para otimizar o controle de produtos e recursos.',
-    imageUrl: '/projects/projeto-default.jpg',
+    description: 'Sistema de gerenciamento de estoque e inventário, desenvolvido para otimizar o controle de produtos e recursos.',
+    imageUrl: '/projects/StockDeps.png',
     siteUrl: '',
     githubUrl: 'https://github.com/depsModels/stockDeps'
   },
   {
     title: 'DEPS Models',
-    description: 'Landing Page da empresa DEPS Models apresentando sua história, cultura e serviços oferecidos no mercado de desenvolvimento.',
-    imageUrl: '/projects/projeto-default.jpg',
+    description: 'Landing Page da empresa DEPS Models apresentando sua cultura e serviços oferecidos no mercado de desenvolvimento.',
+    imageUrl: '/projects/DepsModels.png',
     siteUrl: 'https://depsmodels.com',
     githubUrl: 'https://github.com/depsModels/deps'
   },
   {
     title: 'octo.hub',
     description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
-    imageUrl: '/projects/projeto-default.jpg',
+    imageUrl: '/projects/OctoHub.png',
     siteUrl: '',
     githubUrl: 'https://github.com/depsModels/octoHub'
   },
   {
     title: 'MyGYM',
     description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
-    imageUrl: '/projects/projeto-default.jpg',
+    imageUrl: '/projects/MyGym.png',
     siteUrl: 'https://my-gym-gold.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGYM'
   }
