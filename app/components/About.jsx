@@ -21,9 +21,9 @@ const technologies = [
   { name: 'GitHub', level: 'intermediate' },
   { name: 'Java', level: 'basic' },
   { name: 'C', level: 'basic' },
-  { name: 'Python', level: 'basic' },
   { name: 'PHP', level: 'basic' },
-  { name: 'TypeScript', level: 'basic' },
+  { name: 'Python', level: 'learning' },
+  { name: 'TypeScript', level: 'learning' },
 ];
 
 const About = () => {
@@ -38,6 +38,8 @@ const About = () => {
         return 'border-green-500 hover:bg-green-500/10';
       case 'advanced':
         return 'border-purple-500 hover:bg-purple-500/10';
+      case 'learning':
+        return 'border-yellow-500 hover:bg-yellow-500/10';
       default:
         return 'border-gray-700';
     }
@@ -47,7 +49,8 @@ const About = () => {
   const groupedTechnologies = {
     advanced: technologies.filter(tech => tech.level === 'advanced'),
     intermediate: technologies.filter(tech => tech.level === 'intermediate'),
-    basic: technologies.filter(tech => tech.level === 'basic')
+    basic: technologies.filter(tech => tech.level === 'basic'),
+    learning: technologies.filter(tech => tech.level === 'learning')
   };
 
   return (
@@ -127,6 +130,10 @@ const About = () => {
                   <div className="w-4 h-4 bg-purple-500/20 border border-purple-500 rounded-sm mr-2"></div>
                   <span className="text-sm text-gray-300">{t('advanced')}</span>
                 </div>
+                <div className="flex items-center">
+                  <div className="w-4 h-4 bg-yellow-500/20 border border-yellow-500 rounded-sm mr-2"></div>
+                  <span className="text-sm text-gray-300">{t('learning')}</span>
+                </div>
               </div>
               
               {/* Versão Mobile - lista agrupada por nível */}
@@ -135,7 +142,9 @@ const About = () => {
                   <div key={levelKey} className="space-y-3">
                     <h4 className={`text-sm font-medium ${
                       levelKey === 'advanced' ? 'text-purple-400' : 
-                      levelKey === 'intermediate' ? 'text-green-400' : 'text-blue-400'
+                      levelKey === 'intermediate' ? 'text-green-400' : 
+                      levelKey === 'learning' ? 'text-yellow-400' : 
+                      'text-blue-400'
                     }`}>
                       {t(levelKey)}
                     </h4>
@@ -166,6 +175,7 @@ const About = () => {
                           ${tech.level === 'basic' ? 'text-blue-400' : ''}
                           ${tech.level === 'intermediate' ? 'text-green-400' : ''}
                           ${tech.level === 'advanced' ? 'text-purple-400' : ''}
+                          ${tech.level === 'learning' ? 'text-yellow-400' : ''}
                           font-medium
                         `}>{tech.name} – {t(tech.level)}</span>
                       </div>
