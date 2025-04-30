@@ -1,0 +1,61 @@
+{
+  "jobTitle": "WEB DEVELOPER",
+  "tagline": "Connecting creativity and technology to transform ideas into efficient and relevant digital solutions",
+  "seeMore": "Learn more",
+  
+  "about": "About",
+  "timeline": "Journey",
+  "projects": "Projects",
+  "contact": "Contact",
+  "downloadCV": "Download CV",
+  
+  "aboutTitle": "Hello",
+  "aboutSubtitle": "Welcome to my portfolio!",
+  "aboutIntro": "I am a student of Internet Systems Technology at IFSul - Campus Charqueadas, focusing on web development and creating modern and efficient digital solutions. Throughout my journey, I have been working with various technologies and accumulating valuable experiences in real projects.",
+  "experienceTitle": "I have experience with:",
+  "frontendSkills": "Front-end: HTML, CSS, JavaScript, ReactJS, Next.js, Tailwind",
+  "backendSkills": "Back-end: Node.js, PHP",
+  "databaseSkills": "Databases: MySQL, PostgreSQL, MongoDB",
+  "versioningSkills": "Version control: Git and GitHub",
+  "otherSkills": "I also have knowledge in languages and tools such as Java, C, Python, and TypeScript, which provides me with a solid foundation to work in different contexts and technical challenges.",
+  "professionalProfile": "As a professional, I am organized, communicative, and collaborative. I have intermediate English skills and am familiar with agile methodologies, information security, artificial intelligence, and Open Finance. Committed to delivering quality results, I am always seeking continuous improvement and constant learning.",
+  "technologies": "Technologies",
+  "basic": "Basic",
+  "intermediate": "Intermediate",
+  "advanced": "Advanced",
+  
+  "timelineTitle": "My Journey",
+  "timelineDescription": "A brief summary of my journey as a developer",
+  
+  "timeline2023Title": "Technical High School",
+  "timeline2023Description": "Completion of the IT technical course, where I had my first contact with programming languages and participated in school projects that allowed me to apply the knowledge acquired in class in practice.",
+  "timeline2024Title": "DEPS Models",
+  "timeline2024Description": "I participated in the structuring of DEPS Models, an initiative that provided me with real experience with clients and actual projects. I acted in all stages of development, using agile methodologies, participating in meetings with stakeholders, and contributing to both the front-end and back-end of applications.",
+  "timeline2025Title": "Compass UOL",
+  "timeline2025Description": "I was selected for the Compass UOL Open Finance Scholarship, where I deepened my knowledge in development with a focus on JavaScript and Node.js. This experience has been essential for my professional growth in a dynamic environment focused on financial innovation.",
+  "timelineNowTitle": "Looking for new opportunities",
+  "timelineNowDescription": "I remain open to opportunities that not only contribute to my development but also allow me to generate value with the knowledge I have been building throughout my journey.",
+  
+  "projectsTitle": "My Projects",
+  "projectsDescription": "Some of the projects I've developed or participated in",
+  "viewSite": "Visit site",
+  "viewCode": "View code",
+  "demoNotAvailable": "Demo not available",
+  
+  "contactTitle": "Get in Touch",
+  "contactDescription": "Have an interesting project or proposal? Let's talk!",
+  "phone": "Phone/WhatsApp",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send message",
+  "contactMessage1": "I am always open to new challenges and collaboration opportunities.",
+  "contactMessage2": "If you have an interesting project or opportunity, don't hesitate to get in touch!",
+  
+  "developedBy": "Developed with 💙 by Raul Lize",
+  "allRightsReserved": "All rights reserved",
+  
+  "year": "Year",
+  "now": "Currently",
+  
+  "loading": "Loading..."
+} 

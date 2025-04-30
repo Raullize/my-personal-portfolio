@@ -68,7 +68,7 @@ const Projects = () => {
   }));
 
   return (
-    <section id={language === 'pt-BR' ? 'projetos' : 'projects'} className="section-padding bg-gradient-to-b from-black to-gray-900">
+    <section id={t('projects').toLowerCase()} className="section-padding bg-gradient-to-b from-black to-gray-900">
       <div className="container-wrapper">
         <FadeIn direction="up">
           <div className="text-center mb-12 sm:mb-16">

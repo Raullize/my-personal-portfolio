@@ -25,14 +25,14 @@ const Timeline = () => {
       description: t('timeline2025Description')
     },
     {
-      year: language === 'pt-BR' ? 'Atualmente' : 'Currently',
+      year: t('now'),
       title: t('timelineNowTitle'),
       description: t('timelineNowDescription')
     }
   ];
   
   return (
-    <section id={language === 'pt-BR' ? 'trajetoria' : 'journey'} className="section-padding bg-black text-white">
+    <section id={t('timeline').toLowerCase()} className="section-padding bg-black text-white">
       <div className="container-wrapper">
         <FadeIn direction="up">
           <div className="text-center mb-16">

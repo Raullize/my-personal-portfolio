@@ -56,7 +56,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id={language === 'pt-BR' ? 'contato' : 'contact'} className="section-padding bg-black">
+    <section id={t('contact').toLowerCase()} className="section-padding bg-black">
       <div className="container-wrapper">
         <FadeIn direction="up">
           <div className="text-center mb-12 md:mb-16">
@@ -111,19 +111,9 @@ const Contact = () => {
           <FadeIn direction="up" delay={0.6}>
             <div className="mt-12 md:mt-16 text-center">
               <p className="text-gray-400 mb-6 text-balance">
-                {language === 'pt-BR' ? (
-                  <>
-                    Estou sempre aberto a novos desafios e oportunidades de colaboração.
-                    <br className="hidden sm:block" />
-                    Se você tem um projeto interessante ou uma oportunidade, não hesite em entrar em contato!
-                  </>
-                ) : (
-                  <>
-                    I am always open to new challenges and collaboration opportunities.
-                    <br className="hidden sm:block" />
-                    If you have an interesting project or opportunity, don't hesitate to get in touch!
-                  </>
-                )}
+                {t('contactMessage1')}
+                <br className="hidden sm:block" />
+                {t('contactMessage2')}
               </p>
               
               <a

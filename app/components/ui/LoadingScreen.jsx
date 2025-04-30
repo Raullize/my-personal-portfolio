@@ -2,13 +2,22 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from '../../i18n/useTranslation';
 
 const LoadingScreen = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
   const [hasCompleted, setHasCompleted] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const timeRef = useRef(null);
   const requestRef = useRef(null);
   const completionHandled = useRef(false);
+  const { t } = useTranslation();
+
+  // Este useEffect garante que o componente só renderiza o texto
+  // após o primeiro ciclo de renderização no cliente
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   useEffect(() => {
     if (!timeRef.current) {
@@ -79,7 +88,9 @@ const LoadingScreen = ({ onLoadingComplete }) => {
         </div>
         
         <div className="mt-4 text-gray-400 text-xs sm:text-sm flex justify-between items-center">
-          <span className="h-5">Carregando...</span>
+          <span className="h-5 opacity-0 transition-opacity duration-150" style={{ opacity: isClient ? 1 : 0 }}>
+            {t('loading')}
+          </span>
           <span className="font-medium">{Math.round(progress)}%</span>
         </div>
       </div>

@@ -51,7 +51,7 @@ const About = () => {
   };
 
   return (
-    <section id={language === 'pt-BR' ? 'sobre' : 'about'} className="section-padding bg-gradient-to-b from-gray-900 to-black">
+    <section id={t('about').toLowerCase()} className="section-padding bg-gradient-to-b from-gray-900 to-black">
       <div className="container-wrapper">
         <div className="max-w-5xl mx-auto">
           <FadeIn direction="up">
