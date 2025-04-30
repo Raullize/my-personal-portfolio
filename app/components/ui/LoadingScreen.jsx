@@ -13,8 +13,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   const completionHandled = useRef(false);
   const { t } = useTranslation();
 
-  // Este useEffect garante que o componente só renderiza o texto
-  // após o primeiro ciclo de renderização no cliente
   useEffect(() => {
     setIsClient(true);
   }, []);

@@ -11,9 +11,10 @@ const translations = {
 };
 
 /**
- * Função para registrar um novo idioma no sistema
+ * Registra um novo idioma no sistema de tradução
  * @param {string} languageCode - Código do idioma (ex: 'fr-FR', 'es-ES')
  * @param {Object} translationData - Objeto com as traduções
+ * @returns {boolean} - Sucesso ou falha no registro
  */
 export const registerLanguage = (languageCode, translationData) => {
   if (!languageCode || typeof languageCode !== 'string') {
