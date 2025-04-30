@@ -50,6 +50,10 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
     Timeline.jsx
   /hooks
     useLanguage.js
+  /i18n
+    pt.json
+    en.json
+    useTranslation.js
   favicon.ico
   globals.css
   layout.jsx
