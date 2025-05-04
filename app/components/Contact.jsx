@@ -8,6 +8,9 @@ import GradientText from './ui/GradientText';
 const Contact = () => {
   const { t, language } = useTranslation();
   
+  // Selecionar o arquivo PDF correto com base no idioma
+  const cvFile = language === 'pt-BR' ? '/cv-raul-pt-br.pdf' : '/cv-raul-en.pdf';
+  
   const contactInfo = [
     {
       id: 'phone',
@@ -116,15 +119,28 @@ const Contact = () => {
                 {t('contactMessage2')}
               </p>
               
-              <a
-                href="mailto:raullizeteixeira@gmail.com"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-white font-medium hover:from-primary-700 hover:to-accent-700 transition-colors"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                {t('send')}
-              </a>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                  href="mailto:raullizeteixeira@gmail.com"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-white font-medium hover:from-primary-700 hover:to-accent-700 transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  {t('send')}
+                </a>
+                
+                <a
+                  href={cvFile}
+                  download
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-full bg-gray-800 hover:bg-gray-700 text-white font-medium border border-gray-700 hover:border-gray-600 transition-colors"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  {t('downloadCV')}
+                </a>
+              </div>
             </div>
           </FadeIn>
         </div>

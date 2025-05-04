@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslation } from '../i18n/useTranslation';
-import CVDownload from './CVDownload';
 import LanguageToggle from './LanguageToggle';
 import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
@@ -20,12 +19,9 @@ const Header = () => {
         hoverFillColor='rgba(99, 102, 241, 0.2)'
       />
       
-      <div className="absolute top-4 right-4 md:top-8 md:right-8 flex items-center gap-3 z-10">
+      <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
         <FadeIn direction="down" delay={0.2} duration={0.5} forceVisible={true} className="block">
           <LanguageToggle />
-        </FadeIn>
-        <FadeIn direction="down" delay={0.2} duration={0.5} forceVisible={true} className="block">
-          <CVDownload />
         </FadeIn>
       </div>
 
