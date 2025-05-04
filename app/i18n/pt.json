@@ -58,5 +58,9 @@
   "year": "Ano",
   "now": "Atualmente",
   
-  "loading": "Carregando..."
+  "loading": "Carregando...",
+  "preparingEnvironment": "Preparando o ambiente...",
+  "loadingResources": "Carregando recursos...",
+  "startingTimers": "Iniciando sistema...",
+  "almostReady": "Quase pronto!"
 } 

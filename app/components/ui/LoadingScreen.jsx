@@ -91,6 +91,27 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           </span>
           <span className="font-medium">{Math.round(progress)}%</span>
         </div>
+        
+        {/* Mensagens de Loading */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mt-3 text-center text-gray-300 text-sm sm:text-base"
+        >
+          {progress < 30 && (
+            <p>{t('preparingEnvironment')}</p>
+          )}
+          {progress >= 30 && progress < 60 && (
+            <p>{t('loadingResources')}</p>
+          )}
+          {progress >= 60 && progress < 90 && (
+            <p>{t('startingTimers')}</p>
+          )}
+          {progress >= 90 && (
+            <p>{t('almostReady')}</p>
+          )}
+        </motion.div>
       </div>
     </motion.div>
   );
