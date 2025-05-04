@@ -15,18 +15,13 @@ const LanguageToggle = () => {
   }, []);
 
   const handleClick = () => {
-    if (isTouchDevice) {
-      // Em dispositivos touch, controlar o efeito de flip manualmente
-      setIsFlipped(true);
-      setTimeout(() => {
-        toggleLanguage();
-        // Resetar o estado após completar a animação
-        setTimeout(() => setIsFlipped(false), 600);
-      }, 150);
-    } else {
-      // Em dispositivos não-touch, apenas alternar o idioma
+    // Aplicar efeito de rotação ao clicar para todos os dispositivos
+    setIsFlipped(true);
+    setTimeout(() => {
       toggleLanguage();
-    }
+      // Resetar o estado após completar a animação
+      setTimeout(() => setIsFlipped(false), 600);
+    }, 150);
   };
 
   return (
@@ -37,7 +32,7 @@ const LanguageToggle = () => {
         aria-label="Alternar idioma"
         title={language === 'pt-BR' ? 'Mudar para inglês' : 'Change to Portuguese'}
       >
-        <div className={`relative w-full h-full transform transition-transform duration-500 ${!isTouchDevice ? 'group-hover:rotate-[360deg] group-hover:scale-110' : ''} ${isFlipped ? 'rotate-[360deg] scale-110' : ''}`}>
+        <div className={`relative w-full h-full transform transition-transform duration-500 ${isFlipped ? 'rotate-[360deg] scale-110' : ''}`}>
           <Image
             src={`/icons/${language === 'pt-BR' ? 'pt-br' : 'en'}.png`}
             alt={language === 'pt-BR' ? 'Português' : 'English'}
@@ -47,7 +42,7 @@ const LanguageToggle = () => {
             priority
           />
         </div>
-        <div className={`absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-accent-600/30 transition-opacity duration-300 rounded-full ${!isTouchDevice ? 'opacity-0 group-hover:opacity-100' : ''} ${isFlipped ? 'opacity-100' : 'opacity-0'}`}></div>
+        <div className={`absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-accent-600/30 transition-opacity duration-300 rounded-full ${isFlipped ? 'opacity-100' : 'opacity-0'}`}></div>
       </button>
     </div>
   );
