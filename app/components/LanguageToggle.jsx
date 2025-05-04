@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "../hooks/useLanguage";
+import Image from "next/image";
 
 const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
@@ -9,17 +10,21 @@ const LanguageToggle = () => {
     <div className="relative inline-flex items-center">
       <button 
         onClick={toggleLanguage}
-        className="px-4 py-1.5 rounded-full border border-gray-700 bg-gray-800/50 hover:bg-gray-800 backdrop-blur-sm text-sm font-medium flex items-center gap-2 transition-all"
+        className="w-10 h-10 rounded-full border border-gray-700 bg-gray-800/60 hover:bg-gray-700/80 backdrop-blur-sm flex items-center justify-center transition-all duration-300 overflow-hidden shadow-lg hover:shadow-primary-500/30 hover:border-gray-500 group"
         aria-label="Alternar idioma"
+        title={language === 'pt-BR' ? 'Mudar para inglês' : 'Change to Portuguese'}
       >
-        <span className="w-5 h-5 flex items-center justify-center">
-          <span className="animate-pulse bg-green-500 w-2 h-2 rounded-full absolute"></span>
-          <span className="w-full h-full border-2 border-green-500 rounded-full"></span>
-        </span>
-        <span>{language === 'pt-BR' ? 'PT-BR' : 'EN-US'}</span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
-        </svg>
+        <div className="relative w-full h-full transform group-hover:rotate-[360deg] group-hover:scale-110 transition-transform duration-500">
+          <Image
+            src={`/icons/${language === 'pt-BR' ? 'pt-br' : 'en'}.png`}
+            alt={language === 'pt-BR' ? 'Português' : 'English'}
+            fill
+            sizes="40px"
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary-600/30 to-accent-600/30 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"></div>
       </button>
     </div>
   );
