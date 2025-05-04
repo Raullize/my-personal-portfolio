@@ -52,6 +52,15 @@ const projectsData = [
     imageUrl: '/projects/MyGym.png',
     siteUrl: 'https://my-gym-academy.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGym'
+  },
+  {
+    title: 'DeepFocus',
+    title_en: 'DeepFocus',
+    description: 'Pomodoro personalizável, minimalista e moderno que ajuda a manter o foco durante sessões de trabalho ou estudo.',
+    description_en: 'Customizable, minimalist and modern Pomodoro timer that helps maintain focus during work or study sessions.',
+    imageUrl: '/projects/DeepFocus.png',
+    siteUrl: 'https://deepfocus-pomodoro.vercel.app',
+    githubUrl: 'https://github.com/Raullize/deep-focus'
   }
 ];
 
