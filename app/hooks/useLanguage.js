@@ -7,7 +7,7 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('pt-BR');
 
-  // Verificar se há um idioma salvo no localStorage ao carregar a página
+  // Carregar idioma salvo no localStorage
   useEffect(() => {
     const savedLanguage = localStorage.getItem('language');
     if (savedLanguage) {
@@ -15,7 +15,7 @@ export const LanguageProvider = ({ children }) => {
     }
   }, []);
 
-  // Salvar o idioma no localStorage quando ele muda
+  // Salvar idioma no localStorage
   useEffect(() => {
     localStorage.setItem('language', language);
   }, [language]);

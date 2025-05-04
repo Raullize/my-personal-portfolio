@@ -2,17 +2,11 @@
 
 import { useLanguage } from "../hooks/useLanguage";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
-
-  useEffect(() => {
-    // Detectar se é um dispositivo touchscreen
-    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
-  }, []);
 
   const handleClick = () => {
     // Aplicar efeito de rotação ao clicar para todos os dispositivos

@@ -18,9 +18,7 @@ const FadeIn = ({
   const isInView = useInView(ref, { once, threshold });
   const [shouldRender, setShouldRender] = useState(forceVisible);
   
-  // Força a visibilidade em telas pequenas ou quando explicitamente solicitado
   useEffect(() => {
-    // Verifica se é mobile na primeira renderização
     const isMobile = window.innerWidth < 768;
     if (isMobile || forceVisible) {
       setShouldRender(true);
@@ -29,21 +27,14 @@ const FadeIn = ({
     }
   }, [isInView, forceVisible]);
   
-  // Direções possíveis de entrada
   const getDirection = () => {
     switch(direction) {
-      case 'up':
-        return { y: distance };
-      case 'down':
-        return { y: -distance };
-      case 'left':
-        return { x: distance };
-      case 'right':
-        return { x: -distance };
-      case 'none':
-        return {};
-      default:
-        return { y: distance };
+      case 'up': return { y: distance };
+      case 'down': return { y: -distance };
+      case 'left': return { x: distance };
+      case 'right': return { x: -distance };
+      case 'none': return {};
+      default: return { y: distance };
     }
   };
   

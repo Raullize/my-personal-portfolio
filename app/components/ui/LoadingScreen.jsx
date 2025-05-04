@@ -92,7 +92,6 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           <span className="font-medium">{Math.round(progress)}%</span>
         </div>
         
-        {/* Mensagens de Loading */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
