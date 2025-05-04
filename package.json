@@ -1,7 +1,23 @@
 {
   "name": "personal-portfolio",
-  "version": "0.1.0",
+  "version": "1.3.0",
   "private": true,
+  "description": "Portfólio profissional de Raul Lize, Desenvolvedor Web e estudante de Tecnologia em Sistemas para Internet",
+  "author": {
+    "name": "Raul Lize",
+    "email": "raullizeteixeira@gmail.com",
+    "url": "https://github.com/Raullize"
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "react",
+    "nextjs",
+    "tailwindcss",
+    "responsive",
+    "internationalization",
+    "i18n"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
