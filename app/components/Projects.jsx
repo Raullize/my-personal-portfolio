@@ -41,7 +41,7 @@ const projectsData = [
     description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
     description_en: 'Landing page for octo.hub company with detailed presentation of its services and innovative technological solutions.',
     imageUrl: '/projects/OctoHub.png',
-    siteUrl: '',
+    siteUrl: 'https://octohub.site',
     githubUrl: 'https://github.com/depsModels/octoHub'
   },
   {
