@@ -9,11 +9,9 @@ const LanguageToggle = () => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
-    // Aplicar efeito de rotação ao clicar para todos os dispositivos
     setIsFlipped(true);
     setTimeout(() => {
       toggleLanguage();
-      // Resetar o estado após completar a animação
       setTimeout(() => setIsFlipped(false), 600);
     }, 150);
   };

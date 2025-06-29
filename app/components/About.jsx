@@ -5,7 +5,6 @@ import DecryptedText from './ui/DecryptedText';
 import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 
-// Definindo as tecnologias com seus níveis
 const technologies = [
   { name: 'HTML', level: 'advanced' },
   { name: 'CSS', level: 'intermediate' },
@@ -29,7 +28,6 @@ const technologies = [
 const About = () => {
   const { t, language } = useTranslation();
 
-  // Função para determinar a classe de cor com base no nível
   const getLevelColorClass = (level) => {
     switch (level) {
       case 'basic':

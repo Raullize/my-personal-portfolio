@@ -6,7 +6,6 @@ import FadeIn from './ui/FadeIn';
 import GradientText from './ui/GradientText';
 import ProjectCard from './ui/ProjectCard';
 
-// Dados dos projetos com suporte a múltiplos idiomas
 const projectsData = [
   {
     title: 'Armazém Girassol',
@@ -67,7 +66,6 @@ const projectsData = [
 const Projects = () => {
   const { t, language } = useTranslation();
   
-  // Filtrar projetos com base no idioma atual
   const projects = projectsData.map(project => ({
     title: language === 'pt-BR' ? project.title : project.title_en,
     description: language === 'pt-BR' ? project.description : project.description_en,

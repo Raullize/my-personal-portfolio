@@ -7,7 +7,6 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('pt-BR');
 
-  // Carregar idioma salvo no localStorage
   useEffect(() => {
     const savedLanguage = localStorage.getItem('language');
     if (savedLanguage) {
@@ -15,7 +14,6 @@ export const LanguageProvider = ({ children }) => {
     }
   }, []);
 
-  // Salvar idioma no localStorage
   useEffect(() => {
     localStorage.setItem('language', language);
   }, [language]);

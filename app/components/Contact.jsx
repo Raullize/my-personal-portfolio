@@ -8,7 +8,6 @@ import GradientText from './ui/GradientText';
 const Contact = () => {
   const { t, language } = useTranslation();
   
-  // Selecionar o arquivo PDF correto com base no idioma
   const cvFile = language === 'pt-BR' ? '/cv-raul-pt-br.pdf' : '/cv-raul-en.pdf';
   
   const contactInfo = [
