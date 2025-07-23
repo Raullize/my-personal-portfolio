@@ -14,7 +14,7 @@ const technologies = [
   { name: 'Tailwind', level: 'basic' },
   { name: 'Node.js', level: 'basic' },
   { name: 'MySQL', level: 'basic' },
-  { name: 'PostgreSQL', level: 'learning' },
+  { name: 'PostgreSQL', level: 'basic' },
   { name: 'MongoDB', level: 'learning' },
   { name: 'Git', level: 'intermediate' },
   { name: 'GitHub', level: 'intermediate' },
@@ -23,6 +23,9 @@ const technologies = [
   { name: 'PHP', level: 'basic' },
   { name: 'Python', level: 'learning' },
   { name: 'TypeScript', level: 'learning' },
+  { name: 'AWS', level: 'learning' },
+  { name: 'Docker', level: 'learning' },
+  { name: 'Linux', level: 'learning' },
 ];
 
 const About = () => {
@@ -92,6 +95,7 @@ const About = () => {
                   <li><span className="font-medium text-primary-400">{t('frontendSkills').split(':')[0]}:</span> {t('frontendSkills').split(':')[1]}</li>
                   <li><span className="font-medium text-primary-400">{t('backendSkills').split(':')[0]}:</span> {t('backendSkills').split(':')[1]}</li>
                   <li><span className="font-medium text-primary-400">{t('databaseSkills').split(':')[0]}:</span> {t('databaseSkills').split(':')[1]}</li>
+                  <li><span className="font-medium text-primary-400">{t('devopsSkills').split(':')[0]}:</span> {t('devopsSkills').split(':')[1]}</li>
                   <li><span className="font-medium text-primary-400">{t('versioningSkills').split(':')[0]}:</span> {t('versioningSkills').split(':')[1]}</li>
                 </ul>
               </div>
@@ -189,4 +193,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

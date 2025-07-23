@@ -60,6 +60,15 @@ const projectsData = [
     imageUrl: '/projects/DeepFocus.png',
     siteUrl: 'https://deepfocus-pomodoro.vercel.app',
     githubUrl: 'https://github.com/Raullize/deep-focus'
+  },
+  {
+    title: 'ContaComigo',
+    title_en: 'ContaComigo',
+    description: 'Plataforma web para gerenciamento de finanças pessoais com integração ao Open Finance. Permite visualizar contas, transações e metas financeiras em um único painel.',
+    description_en: 'Web platform for personal finance management with Open Finance integration. Allows viewing accounts, transactions and financial goals in a single panel.',
+    imageUrl: '/projects/ContaComigo.png',
+    siteUrl: '',
+    githubUrl: 'https://github.com/Raullize/conta-comigo'
   }
 ];
 
@@ -123,4 +132,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

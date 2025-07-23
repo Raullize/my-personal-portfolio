@@ -15,7 +15,8 @@
   "experienceTitle": "Tenho experiência com:",
   "frontendSkills": "Front-end: HTML, CSS, JavaScript, ReactJS, Next.js, Tailwind",
   "backendSkills": "Back-end: Node.js, PHP",
-  "databaseSkills": "Bancos de dados: MySQL, PostgreSQL, MongoDB",
+  "databaseSkills": "Bancos de dados: MySQL, PostgreSQL",
+  "devopsSkills": "DevOps: Docker",
   "versioningSkills": "Versionamento: Git e GitHub",
   "otherSkills": "Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e TypeScript, o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.",
   "professionalProfile": "Como profissional, sou organizado, comunicativo e colaborativo. Tenho inglês intermediário, sou familiarizado com metodologias ágeis, segurança da informação, inteligência artificial e Open Finance. Comprometido com a entrega de resultados de qualidade, estou sempre em busca de aprimoramento contínuo e aprendizado constante.",
@@ -33,7 +34,7 @@
   "timeline2024Title": "DEPS Models",
   "timeline2024Description": "Participei da estruturação da DEPS Models, uma iniciativa que me proporcionou experiência real com clientes e projetos de verdade. Atuei em todas as etapas do desenvolvimento, utilizando metodologias ágeis, participando de reuniões com stakeholders e contribuindo tanto no front-end quanto no back-end das aplicações.",
   "timeline2025Title": "Compass UOL",
-  "timeline2025Description": "Fui selecionado para a bolsa Scholarship Open Finance da Compass UOL, onde aprofundei meus conhecimentos em desenvolvimento com foco em JavaScript e Node.js. Essa experiência tem sido essencial para meu crescimento profissional em um ambiente dinâmico e voltado à inovação financeira.",
+  "timeline2025Description": "Fui selecionado para a bolsa Scholarship Open Finance da Compass UOL, onde aprofundei meus conhecimentos em desenvolvimento com foco em JavaScript e Node.js. Essa experiência tem sido essencial para meu crescimento profissional em um ambiente dinâmico e voltado à inovação financeira. Foi também o período onde pude tirar minha certificação AWS Certified Cloud Practitioner.",
   "timelineNowTitle": "Em busca de novas oportunidades",
   "timelineNowDescription": "Sigo aberto a oportunidades que não apenas contribuam para o meu desenvolvimento, mas que também me permitam gerar valor com os conhecimentos que venho construindo ao longo da minha trajetória.",
   
@@ -45,7 +46,7 @@
   
   "contactTitle": "Entre em Contato",
   "contactDescription": "Tem um projeto ou proposta interessante? Vamos conversar!",
-  "phone": "Celular/WhatsApp",
+  "phone": "Celular",
   "email": "E-mail",
   "message": "Mensagem",
   "send": "Enviar mensagem",
@@ -63,4 +64,4 @@
   "loadingResources": "Carregando recursos...",
   "startingTimers": "Iniciando sistema...",
   "almostReady": "Quase pronto!"
-} 
+}

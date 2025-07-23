@@ -14,7 +14,7 @@ const Contact = () => {
     {
       id: 'phone',
       title: t('phone'),
-      value: '(51) 9 9502-4711',
+      value: '+55 51 99502-4711',
       href: 'https://wa.me/5551995024711',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -148,4 +148,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
