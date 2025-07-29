@@ -11,7 +11,7 @@ const technologies = [
   { name: 'JavaScript', level: 'intermediate' },
   { name: 'React', level: 'basic' },
   { name: 'Next.js', level: 'basic' },
-  { name: 'Tailwind', level: 'basic' },
+  { name: 'Tailwind', level: 'intermediate' },
   { name: 'Node.js', level: 'basic' },
   { name: 'MySQL', level: 'basic' },
   { name: 'PostgreSQL', level: 'basic' },
