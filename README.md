@@ -78,6 +78,7 @@ Cards interativos apresentando os principais projetos que desenvolvi:
 - DepsModels - [GitHub](https://github.com/depsModels/deps) | [Site](https://depsmodels.com)
 - octo.hub - [GitHub](https://github.com/depsModels/octoHub)
 - MyGym - [GitHub](https://github.com/depsModels/MyGym) | [Site](https://my-gym-academy.vercel.app)
+- ContaComigo - [GitHub](https://github.com/depsModels/conta-comigo)
 
 ### 📞 Contato
 Todos os canais para entrar em contato comigo:

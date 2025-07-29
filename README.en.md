@@ -77,7 +77,8 @@ Interactive cards presenting the main projects I have developed:
 - StockDeps - [GitHub](https://github.com/depsModels/stockDeps)
 - DepsModels - [GitHub](https://github.com/depsModels/deps) | [Website](https://depsmodels.com)
 - octo.hub - [GitHub](https://github.com/depsModels/octoHub)
-- MyGym - [GitHub](https://github.com/depsModels/MyGym) | [Website](https://my-gym-academy.vercel.app)
+- MyGym - [GitHub](https://github.com/depsModels/MyGym) | [Site](https://my-gym-academy.vercel.app)
+- ContaComigo - [GitHub](https://github.com/depsModels/conta-comigo)
 
 ### 📞 Contact
 All channels to get in touch with me:
@@ -118,4 +119,4 @@ Feel free to contact me through the channels available in the portfolio!
 
 ---
 
-⭐ Developed with 💙 by Raul Lize - 2025 
+⭐ Developed with 💙 by Raul Lize - 2025
