@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { useTranslation } from '../../i18n/useTranslation';
+import { useTranslation } from '@/lib/i18n/useTranslation';
 
 const LoadingScreen = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
@@ -116,4 +116,4 @@ const LoadingScreen = ({ onLoadingComplete }) => {
   );
 };
 
-export default LoadingScreen; 
+export default LoadingScreen;

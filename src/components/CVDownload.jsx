@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslation } from '@/app/i18n/useTranslation';
+import { useTranslation } from '@/lib/i18n/useTranslation';
 
 const CVDownload = () => {
   const { t, language } = useTranslation();

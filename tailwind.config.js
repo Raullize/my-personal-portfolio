@@ -3,8 +3,8 @@ module.exports = {
   content: [
     './src/app/**/*.{js,jsx}',
     './src/components/**/*.{js,jsx}',
-    './src/app/components/**/*.{js,jsx}',
-    './src/app/components/ui/**/*.{js,jsx}',
+    './src/hooks/**/*.{js,jsx}',
+    './src/lib/**/*.{js,jsx}',
   ],
   darkMode: 'class',
   theme: {

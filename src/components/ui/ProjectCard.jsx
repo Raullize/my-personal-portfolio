@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useTranslation } from '@/app/i18n/useTranslation';
+import { useTranslation } from '@/lib/i18n/useTranslation';
 
 const ProjectCard = ({ title, description, imageUrl, siteUrl, githubUrl }) => {
   const { t } = useTranslation();

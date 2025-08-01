@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslation } from '@/app/i18n/useTranslation';
-import FadeIn from '@/app/components/ui/FadeIn';
+import { useTranslation } from '@/lib/i18n/useTranslation';
+import FadeIn from '@/components/ui/FadeIn';
 
 const Footer = () => {
   const { t, language } = useTranslation();

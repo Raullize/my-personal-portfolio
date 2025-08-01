@@ -1,9 +1,9 @@
 "use client";
 
-import { useTranslation } from '@/app/i18n/useTranslation';
-import DecryptedText from '@/app/components/ui/DecryptedText';
-import FadeIn from '@/app/components/ui/FadeIn';
-import GradientText from '@/app/components/ui/GradientText';
+import { useTranslation } from '@/lib/i18n/useTranslation';
+import DecryptedText from '@/components/ui/DecryptedText';
+import FadeIn from '@/components/ui/FadeIn';
+import GradientText from '@/components/ui/GradientText';
 
 const Contact = () => {
   const { t, language } = useTranslation();
