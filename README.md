@@ -27,7 +27,10 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
 ## 📂 Estrutura do Projeto
 
 ```
-/app
+/src
+  /app
+    layout.jsx
+    page.jsx
   /components
     /ui
       ClickSpark.jsx
@@ -50,14 +53,17 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
     Timeline.jsx
   /hooks
     useLanguage.js
-  /i18n
-    pt.json
-    en.json
-    useTranslation.js
+  /lib
+    /i18n
+      pt.json
+      en.json
+      useTranslation.js
+  /styles
+    globals.css
+/public
   favicon.ico
-  globals.css
-  layout.jsx
-  page.jsx
+  /icons
+  /projects
 ```
 
 ## 📱 Seções do Portfólio
