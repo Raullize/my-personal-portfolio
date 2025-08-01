@@ -1,7 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
-import ClientRootWrapper from "./components/ui/ClientRootWrapper";
-import "./globals.css";
-import { LanguageProvider } from "./hooks/useLanguage";
+import ClientRootWrapper from "@/app/components/ui/ClientRootWrapper";
+import "@/app/globals.css";
+import { LanguageProvider } from "@/app/hooks/useLanguage";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,4 +36,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-} 
+}

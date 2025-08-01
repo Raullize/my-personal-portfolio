@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/components/**/*.{js,jsx}',
-    './app/components/ui/**/*.{js,jsx}',
+    './src/app/**/*.{js,jsx}',
+    './src/components/**/*.{js,jsx}',
+    './src/app/components/**/*.{js,jsx}',
+    './src/app/components/ui/**/*.{js,jsx}',
   ],
   darkMode: 'class',
   theme: {
@@ -54,4 +54,4 @@ module.exports = {
     },
   },
   plugins: [],
-} 
+}

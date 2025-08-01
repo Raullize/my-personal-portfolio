@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from '../hooks/useLanguage';
+import { useLanguage } from '@/app/hooks/useLanguage';
 import ptTranslations from './pt.json';
 import enTranslations from './en.json';
 
@@ -57,4 +57,4 @@ export const useTranslation = () => {
   };
   
   return { t, language };
-}; 
+};

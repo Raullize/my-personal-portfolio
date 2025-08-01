@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "../hooks/useLanguage";
+import { useLanguage } from "@/app/hooks/useLanguage";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -40,4 +40,4 @@ const LanguageToggle = () => {
   );
 };
 
-export default LanguageToggle; 
+export default LanguageToggle;

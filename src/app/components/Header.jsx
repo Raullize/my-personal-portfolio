@@ -1,10 +1,10 @@
 "use client";
 
-import { useTranslation } from '../i18n/useTranslation';
-import LanguageToggle from './LanguageToggle';
-import FadeIn from './ui/FadeIn';
-import GradientText from './ui/GradientText';
-import Squares from './ui/Squares';
+import { useTranslation } from '@/app/i18n/useTranslation';
+import LanguageToggle from '@/app/components/LanguageToggle';
+import FadeIn from '@/app/components/ui/FadeIn';
+import GradientText from '@/app/components/ui/GradientText';
+import Squares from '@/app/components/ui/Squares';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -69,4 +69,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

@@ -1,9 +1,9 @@
 "use client";
 
-import { useTranslation } from '../i18n/useTranslation';
-import DecryptedText from './ui/DecryptedText';
-import FadeIn from './ui/FadeIn';
-import GradientText from './ui/GradientText';
+import { useTranslation } from '@/app/i18n/useTranslation';
+import DecryptedText from '@/app/components/ui/DecryptedText';
+import FadeIn from '@/app/components/ui/FadeIn';
+import GradientText from '@/app/components/ui/GradientText';
 
 const Timeline = () => {
   const { t, language } = useTranslation();
@@ -124,4 +124,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline; 
+export default Timeline;
