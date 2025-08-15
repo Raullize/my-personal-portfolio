@@ -1,6 +1,6 @@
 import { Inter, Poppins } from "next/font/google";
 import ClientRootWrapper from "@/components/ui/ClientRootWrapper";
-import "@/styles/globals.css";
+import "./globals.css";
 import { LanguageProvider } from "@/hooks/useLanguage";
 
 const inter = Inter({
