@@ -29,6 +29,7 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
 ```
 /src
   /app
+    globals.css
     layout.jsx
     page.jsx
   /components
@@ -58,8 +59,6 @@ Este projeto foi criado para apresentar minhas habilidades, projetos e experiên
       pt.json
       en.json
       useTranslation.js
-  /styles
-    globals.css
 /public
   favicon.ico
   /icons

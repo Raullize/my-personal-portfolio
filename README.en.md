@@ -29,6 +29,7 @@ This project was created to showcase my skills, projects, and professional exper
 ```
 /src
   /app
+    globals.css
     layout.jsx
     page.jsx
   /components
@@ -58,8 +59,6 @@ This project was created to showcase my skills, projects, and professional exper
       pt.json
       en.json
       useTranslation.js
-  /styles
-    globals.css
 /public
   favicon.ico
   /icons
