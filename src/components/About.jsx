@@ -23,9 +23,12 @@ const technologies = [
   { name: 'PHP', level: 'basic' },
   { name: 'Python', level: 'learning' },
   { name: 'TypeScript', level: 'learning' },
-  { name: 'AWS', level: 'learning' },
   { name: 'Docker', level: 'learning' },
+  { name: 'AWS', level: 'learning' },
   { name: 'Linux', level: 'learning' },
+  { name: 'Drizzle', level: 'learning' },
+  { name: 'Prisma', level: 'learning' },
+  { name: 'Stripe', level: 'learning' },
 ];
 
 const About = () => {
@@ -103,7 +106,13 @@ const About = () => {
             
             <FadeIn direction="up" delay={0.4}>
               <p className="text-lg responsive-text">
-                {t('otherSkills')}
+                {t('additionalSkills')}
+              </p>
+            </FadeIn>
+            
+            <FadeIn direction="up" delay={0.45}>
+              <p className="text-lg responsive-text font-medium text-primary-400">
+                {t('learningSkills')}
               </p>
             </FadeIn>
             
