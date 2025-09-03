@@ -4,9 +4,9 @@
 const GradientText = ({
   children,
   className = "",
-  colors = ["#6366f1", "#a855f7", "#ec4899", "#6366f1"], // Cores do gradiente atual
-  animationSpeed = 8, // Velocidade da animação em segundos
-  showBorder = false, // Visibilidade da borda
+  colors = ["#6366f1", "#a855f7", "#ec4899", "#6366f1"],
+  animationSpeed = 8,
+  showBorder = false,
 }) => {
   return (
     <div className={`relative inline-block ${className}`}>
@@ -34,4 +34,4 @@ const GradientText = ({
   );
 };
 
-export default GradientText; 
+export default GradientText;

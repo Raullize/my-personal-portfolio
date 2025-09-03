@@ -57,22 +57,22 @@ const Timeline = () => {
           </div>
         </FadeIn>
 
-        {/* Timeline para desktop */}
+
         <div className="hidden md:block relative py-8">
-          {/* Linha central da timeline */}
+
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-primary-600 to-accent-600"></div>
 
           <div className="grid grid-cols-1 gap-32">
             {timelineItems.map((item, index) => (
               <div key={index} className="relative">
-                {/* Círculo na linha */}
+    
                 <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>
                   <div className="absolute w-4 h-4 bg-gray-900 rounded-full"></div>
                 </div>
 
                 <div className={`flex items-center ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
-                  {/* Conteúdo */}
+      
                   <FadeIn 
                     direction={index % 2 === 0 ? 'right' : 'left'} 
                     delay={0.1 * index} 
@@ -92,15 +92,15 @@ const Timeline = () => {
           </div>
         </div>
 
-        {/* Timeline para mobile */}
+
         <div className="md:hidden relative py-8">
-          {/* Linha vertical da timeline */}
+
           <div className="absolute left-4 top-0 h-full w-0.5 bg-gradient-to-b from-primary-600 to-accent-600"></div>
 
           <div className="space-y-32">
             {timelineItems.map((item, index) => (
               <div key={index} className="relative pl-12">
-                {/* Círculo na linha */}
+    
                 <div className="absolute left-4 top-8 transform -translate-x-1/2 z-10 flex items-center justify-center">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary-500 to-accent-500 animate-pulse shadow-lg shadow-primary-500/30"></div>
                   <div className="absolute w-4 h-4 bg-gray-900 rounded-full"></div>

@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Mostrar o botão quando o usuário rolar para baixo
+
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -20,17 +20,17 @@ const ScrollToTop = () => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // Função para rolar suavemente para o topo com animação personalizada
+
   const scrollToTop = () => {
     const startY = window.scrollY;
     const targetY = 0;
-    const duration = Math.min(1000 + startY * 0.3, 1500); // Duração entre 1s e 1.5s
+    const duration = Math.min(1000 + startY * 0.3, 1500);
     let startTime = null;
 
-    // Função para calcular a posição do scroll em cada frame (efeito de desaceleração)
+
     const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
 
-    // Função de animação que será executada em cada frame
+
     function animation(currentTime) {
       if (startTime === null) startTime = currentTime;
       const timeElapsed = currentTime - startTime;
@@ -44,7 +44,7 @@ const ScrollToTop = () => {
       }
     }
 
-    // Iniciar animação
+
     requestAnimationFrame(animation);
   };
 
@@ -76,4 +76,4 @@ const ScrollToTop = () => {
   );
 };
 
-export default ScrollToTop; 
+export default ScrollToTop;

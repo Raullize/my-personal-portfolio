@@ -13,8 +13,8 @@ const ClickSpark = ({
     children
 }) => {
     const canvasRef = useRef(null);
-    const sparksRef = useRef([]); // Stores spark data
-    const startTimeRef = useRef(null); // Tracks initial timestamp for animation
+    const sparksRef = useRef([]);
+  const startTimeRef = useRef(null);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -35,17 +35,17 @@ const ClickSpark = ({
 
         const handleResize = () => {
             clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(resizeCanvas, 100); // Debounce by 100ms
+            resizeTimeout = setTimeout(resizeCanvas, 100);
         };
 
-        // Observe size changes
+    
         const ro = new ResizeObserver(handleResize);
         ro.observe(parent);
 
-        // Initial sizing
+    
         resizeCanvas();
 
-        // Cleanup
+    
         return () => {
             ro.disconnect();
             clearTimeout(resizeTimeout);
@@ -79,14 +79,14 @@ const ClickSpark = ({
 
         const draw = (timestamp) => {
             if (!startTimeRef.current) {
-                startTimeRef.current = timestamp; // store initial time
+                startTimeRef.current = timestamp;
             }
             ctx?.clearRect(0, 0, canvas.width, canvas.height);
 
             sparksRef.current = sparksRef.current.filter((spark) => {
                 const elapsed = timestamp - spark.startTime;
                 if (elapsed >= duration) {
-                    // Spark finished its animation
+            
                     return false;
                 }
 
@@ -96,13 +96,13 @@ const ClickSpark = ({
                 const distance = eased * sparkRadius * extraScale;
                 const lineLength = sparkSize * (1 - eased);
 
-                // Points for the spark line
+          
                 const x1 = spark.x + distance * Math.cos(spark.angle);
                 const y1 = spark.y + distance * Math.sin(spark.angle);
                 const x2 = spark.x + (distance + lineLength) * Math.cos(spark.angle);
                 const y2 = spark.y + (distance + lineLength) * Math.sin(spark.angle);
 
-                // Draw the spark line
+          
                 ctx.strokeStyle = sparkColor;
                 ctx.lineWidth = 2;
                 ctx.beginPath();
@@ -164,4 +164,4 @@ const ClickSpark = ({
     );
 };
 
-export default ClickSpark; 
+export default ClickSpark;

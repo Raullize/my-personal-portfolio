@@ -7,7 +7,7 @@
     @apply bg-black text-gray-100 scroll-smooth overflow-x-hidden;
   }
   
-  /* Melhorando a experiência em dispositivos móveis */
+  
   @media (max-width: 640px) {
     html {
       -webkit-tap-highlight-color: transparent;
@@ -40,18 +40,18 @@
     animation: gradientMove 2s ease infinite;
   }
   
-  /* Card patterns para consistência */
+  
   .card-base {
     @apply bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-xl 
            hover:border-gray-700 transition-all;
   }
   
-  /* Utilitários responsivos */
+  
   .responsive-grid {
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6;
   }
   
-  /* Melhor controle de quebra de texto */
+  
   .text-balance {
     text-wrap: balance;
     hyphens: auto;
@@ -59,7 +59,7 @@
     word-break: normal;
   }
   
-  /* Textos responsivos sem quebras estranhas */
+  
   .responsive-text {
     @apply max-w-full md:max-w-2xl lg:max-w-3xl xl:max-w-4xl mx-auto;
     hyphens: auto;

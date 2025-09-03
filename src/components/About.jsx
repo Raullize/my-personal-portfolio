@@ -49,7 +49,6 @@ const About = () => {
     }
   };
 
-  // Agrupando tecnologias por nível para melhor organização visual
   const groupedTechnologies = {
     advanced: technologies.filter(tech => tech.level === 'advanced'),
     intermediate: technologies.filter(tech => tech.level === 'intermediate'),
@@ -127,7 +126,7 @@ const About = () => {
             <div className="mt-12 pt-8 border-t border-gray-800">
               <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-white">{t('technologies')}</h3>
               
-              {/* Legenda */}
+  
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 <div className="flex items-center">
                   <div className="w-4 h-4 bg-blue-500/20 border border-blue-500 rounded-sm mr-2"></div>
@@ -147,7 +146,7 @@ const About = () => {
                 </div>
               </div>
               
-              {/* Versão Mobile - lista agrupada por nível */}
+  
               <div className="md:hidden space-y-6">
                 {Object.entries(groupedTechnologies).map(([levelKey, techs]) => (
                   <div key={levelKey} className="space-y-3">
@@ -172,7 +171,7 @@ const About = () => {
                 ))}
               </div>
               
-              {/* Versão Desktop - grid tradicional */}
+  
               <div className="hidden md:grid grid-cols-3 lg:grid-cols-6 gap-4">
                 {technologies.map((tech, index) => (
                   <FadeIn key={tech.name} direction="up" delay={0.1 + (index * 0.03)} duration={0.5}>
