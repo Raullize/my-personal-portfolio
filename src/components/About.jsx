@@ -26,9 +26,6 @@ const technologies = [
   { name: 'Docker', level: 'learning' },
   { name: 'Linux', level: 'learning' },
   { name: 'AWS', level: 'learning' },
-  { name: 'Drizzle', level: 'learning' },
-  { name: 'Prisma', level: 'learning' },
-  { name: 'Stripe', level: 'learning' },
 ];
 
 const About = () => {
@@ -109,11 +106,7 @@ const About = () => {
               </p>
             </FadeIn>
             
-            <FadeIn direction="up" delay={0.45}>
-              <p className="text-lg responsive-text font-medium text-primary-400">
-                {t('learningSkills')}
-              </p>
-            </FadeIn>
+
             
             <FadeIn direction="up" delay={0.5}>
               <p className="text-lg responsive-text">
