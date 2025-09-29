@@ -15,6 +15,12 @@ const Footer = () => {
             <div className="mb-0 text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-bold text-white">Raul Lize</h3>
               <p className="text-gray-400 mt-1 text-sm sm:text-base">{t('jobTitle')}</p>
+              <div className="flex items-center justify-center md:justify-start mt-2">
+                <svg className="h-4 w-4 text-gray-400 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                </svg>
+                <p className="text-gray-400 text-sm">{t('location')}</p>
+              </div>
             </div>
           </FadeIn>
           
