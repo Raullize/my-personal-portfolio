@@ -26,8 +26,8 @@ const Header = () => {
       </div>
 
       <div className="relative z-10 container-wrapper flex flex-col items-center">
-        <FadeIn direction="down" delay={0.2} duration={0.7}>
-          <span className="text-gray-300 text-lg md:text-xl font-medium tracking-widest mb-4">{t('jobTitle')}</span>
+        <FadeIn direction="down" delay={0.2} duration={0.7} className="mb-4">
+          <span className="text-gray-300 text-xl md:text-2xl font-medium tracking-widest">{t('jobTitle')}</span>
         </FadeIn>
         
         <FadeIn direction="up" delay={0.4} duration={0.8}>
