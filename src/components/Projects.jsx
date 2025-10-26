@@ -73,8 +73,8 @@ const projectsData = [
   {
     title: 'MIRC',
     title_en: 'MIRC',
-    description: 'Mapeador Inteligente de Resiliência Climática (MIRC): Plataforma web com IA e geolocalização para alertas precoces e orientação de riscos climáticos (inundações) no Rio Grande do Sul. Desenvolvido com Next.js, TypeScript e Docker.',
-    description_en: 'Intelligent Climate Resilience Mapper (MIRC): Web platform with AI and geolocation for early warnings and climate risk guidance (floods) in Rio Grande do Sul. Developed with Next.js, TypeScript and Docker.',
+    description: 'Mapeador Inteligente de Resiliência Climática (MIRC): Plataforma web integrada com chatbot IA e geolocalização para alertas precoces e orientação de riscos climáticos (inundações) no Rio Grande do Sul.',
+    description_en: 'Intelligent Climate Resilience Mapper (MIRC): Web platform integrated with AI chatbot and geolocation for early warnings and climate risk guidance (floods) in Rio Grande do Sul.',
     imageUrl: '/projects/MIRC.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2025'
