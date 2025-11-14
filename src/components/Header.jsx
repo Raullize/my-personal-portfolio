@@ -31,7 +31,7 @@ const Header = () => {
         </FadeIn>
         
         <FadeIn direction="up" delay={0.4} duration={0.8}>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-heading whitespace-nowrap">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 font-heading whitespace-nowrap">
             <GradientText 
               colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
               animationSpeed={2.5}
@@ -39,10 +39,6 @@ const Header = () => {
               Raul Lize
             </GradientText>
           </h1>
-        </FadeIn>
-        
-        <FadeIn direction="none" delay={0.6} duration={1}>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mb-8"></div>
         </FadeIn>
         
         <FadeIn direction="up" delay={0.8} duration={0.7}>
