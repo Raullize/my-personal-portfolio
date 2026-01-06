@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "1.8.0",
   "private": true,
-  "description": "Portfólio profissional de Raul Lize, Desenvolvedor Web e estudante de Tecnologia em Sistemas para Internet",
+  "description": "Portfólio profissional de Raul Lize, Full Stack Developer e estudante de Tecnologia em Sistemas para Internet",
   "author": {
     "name": "Raul Lize",
     "email": "raullizeteixeira@gmail.com",
@@ -10,7 +10,7 @@
   },
   "keywords": [
     "portfolio",
-    "web developer",
+    "full stack developer",
     "react",
     "nextjs",
     "tailwindcss",
