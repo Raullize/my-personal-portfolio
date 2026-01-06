@@ -4,7 +4,7 @@
 const GradientText = ({
   children,
   className = "",
-  colors = ["#6366f1", "#a855f7", "#ec4899", "#6366f1"],
+  colors = ["#1d4ed8", "#3b82f6", "#22d3ee", "#1d4ed8"],
   animationSpeed = 8,
   showBorder = false,
 }) => {

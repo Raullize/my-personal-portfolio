@@ -99,7 +99,7 @@ const Projects = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 font-heading">
               <GradientText
-                colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]}
+                colors={["#1d4ed8", "#3b82f6", "#22d3ee", "#1d4ed8"]}
                 animationSpeed={2.5}
               >
                 {t('projectsTitle')}

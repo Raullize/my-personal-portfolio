@@ -16,7 +16,7 @@ const Header = () => {
         squareSize={40}
         direction='diagonal'
         borderColor='rgba(255, 255, 255, 0.1)'
-        hoverFillColor='rgba(99, 102, 241, 0.2)'
+        hoverFillColor='rgba(56, 189, 248, 0.2)'
       />
       
       <div className="absolute top-4 right-4 md:top-8 md:right-8 z-10">
@@ -33,7 +33,7 @@ const Header = () => {
         <FadeIn direction="up" delay={0.4} duration={0.8}>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 font-heading whitespace-nowrap">
             <GradientText 
-              colors={["#6366f1", "#a855f7", "#ec4899", "#6366f1"]} 
+              colors={["#1d4ed8", "#3b82f6", "#22d3ee", "#1d4ed8"]} 
               animationSpeed={2.5}
             >
               Raul Lize
