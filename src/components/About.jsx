@@ -71,6 +71,7 @@ const About = () => {
               </h2>
               <div className="text-lg md:text-xl font-medium text-gray-300 responsive-text">
                 <DecryptedText
+                  key={t('aboutSubtitle')}
                   text={t('aboutSubtitle')}
                   speed={60}
                   maxIterations={10}

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '@/lib/i18n/useTranslation';
+import DecryptedText from '@/components/ui/DecryptedText';
 import FadeIn from '@/components/ui/FadeIn';
 import GradientText from '@/components/ui/GradientText';
 
@@ -119,7 +120,6 @@ const ExperienceCard = ({ item, index }) => {
 
 const Experience = () => {
   const { t } = useTranslation();
-  
   const experienceItems = [
     {
       role: t('exp_domvsRole'),
@@ -163,8 +163,16 @@ const Experience = () => {
                 {t('experienceSectionTitle')}
               </GradientText>
             </h2>
-            <div className="text-lg text-gray-300 max-w-2xl mx-auto">
-              {t('experienceSectionDescription')}
+            <div className="text-lg md:text-xl font-medium text-gray-300 responsive-text max-w-2xl mx-auto">
+              <DecryptedText
+                key={t('experienceSectionDescription')}
+                text={t('experienceSectionDescription')}
+                speed={60}
+                maxIterations={10}
+                sequential={true}
+                revealDirection="start"
+                animateOn="view"
+              />
             </div>
           </div>
         </FadeIn>

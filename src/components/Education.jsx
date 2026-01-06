@@ -60,8 +60,9 @@ const Education = () => {
                 {t('educationSectionTitle')}
               </GradientText>
             </h2>
-            <div className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <div className="text-lg md:text-xl font-medium text-gray-300 responsive-text max-w-3xl mx-auto">
               <DecryptedText
+                key={t('educationSectionDescription')}
                 text={t('educationSectionDescription')}
                 speed={60}
                 maxIterations={10}
