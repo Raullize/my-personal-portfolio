@@ -61,6 +61,8 @@ const Footer = () => {
             <nav aria-label="Links rápidos do rodapé">
               <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
                 <li><a href={`#${language === 'pt-BR' ? 'sobre' : 'about'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('about')}</a></li>
+                <li><a href={`#${language === 'pt-BR' ? 'experiência' : 'experience'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('experience')}</a></li>
+                <li><a href={`#${language === 'pt-BR' ? 'formação' : 'education'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('education')}</a></li>
                 <li><a href={`#${language === 'pt-BR' ? 'projetos' : 'projects'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('projects')}</a></li>
                 <li><a href={`#${language === 'pt-BR' ? 'contato' : 'contact'}`} className="text-gray-400 hover:text-white text-xs sm:text-sm transition-colors">{t('contact')}</a></li>
               </ul>
