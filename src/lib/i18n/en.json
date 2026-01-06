@@ -34,7 +34,6 @@
   "educationSectionTitle": "Academic Education",
   "educationSectionDescription": "My educational background and certifications",
   
-  "exp_depsTitle": "DEPS Models",
   "exp_depsRole": "Full Stack Developer",
   "exp_depsCompany": "DEPS Models",
   "exp_depsPeriod": "Mar 2024 - Oct 2025",
@@ -47,9 +46,7 @@
     "Use of agile methodologies"
   ],
   "exp_depsTechnologies": ["React", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Scrum"],
-  "exp_depsDesc": "I participated in the structuring of DEPS Models, an initiative that provided me with real experience with clients and real projects. I worked in all stages of development, using agile methodologies, participating in meetings with stakeholders, and contributing to both the front-end and back-end of applications.",
 
-  "exp_compassTitle": "Compass UOL",
   "exp_compassRole": "Scholarship | Open Finance Powered by AWS",
   "exp_compassCompany": "Compass UOL",
   "exp_compassPeriod": "Aug 2024 - Nov 2024",
@@ -62,9 +59,7 @@
     "AWS Certified Cloud Practitioner Certification"
   ],
   "exp_compassTechnologies": ["JavaScript", "Node.js", "AWS", "Scrum", "Git", "Open Finance"],
-  "exp_compassDesc": "I was selected for the Compass UOL Open Finance Scholarship, where I deepened my knowledge in development with a focus on JavaScript and Node.js. This experience has been essential for my professional growth in a dynamic environment focused on financial innovation. It was also the period where I was able to obtain my AWS Certified Cloud Practitioner certification.",
 
-  "exp_domvsTitle": "Domvs IT",
   "exp_domvsRole": "Intern: Software Developer",
   "exp_domvsCompany": "Domvs IT",
   "exp_domvsPeriod": "Dec 2025 - Present",
@@ -79,14 +74,10 @@
     "Use of cloud computing tools (Azure) for organizing sprints and workflows."
   ],
   "exp_domvsTechnologies": [".NET", "React", "C#", "Azure", "UML", "Scrum", "Pair Programming"],
-  "exp_domvsDesc": "I work as a Full Stack Developer, contributing to the development of internal applications with .NET and React, participating in the entire software lifecycle, from requirements analysis to implementation. I collaborate in an agile team (Scrum) and constantly seek technical improvement.",
 
   "responsibilitiesTitle": "MAIN RESPONSIBILITIES",
   "technologiesTitle": "TECHNOLOGIES & SKILLS",
   
-  "expNowTitle": "Looking for new opportunities",
-  "expNowDesc": "I remain open to opportunities that not only contribute to my development but also allow me to generate value with the knowledge I have been building throughout my journey.",
-
   "edu2023Title": "Technical High School",
   "edu2023Desc": "High school integrated with Technical Course in Informatics. During the course, I developed a solid foundation in programming and participated in practical projects that consolidated my interest in technology.",
   "eduCurrentTitle": "Internet Systems Technology",
@@ -121,9 +112,6 @@
   
   "developedBy": "Developed by Raul Lize",
   "allRightsReserved": "All rights reserved",
-  
-  "year": "Year",
-  "now": "Currently",
   
   "loading": "Loading...",
   "preparingEnvironment": "Preparing environment...",

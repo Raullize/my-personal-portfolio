@@ -34,7 +34,7 @@
   "experienceSectionDescription": "Minha jornada no mercado de trabalho",
   "educationSectionTitle": "Formação Acadêmica",
   "educationSectionDescription": "Minha base educacional e certificações",
-  "exp_depsTitle": "DEPS Models",
+
   "exp_depsRole": "Desenvolvedor Full Stack",
   "exp_depsCompany": "DEPS Models",
   "exp_depsPeriod": "Mar 2024 - Out 2025",
@@ -47,9 +47,7 @@
     "Utilização de metodologias ágeis"
   ],
   "exp_depsTechnologies": ["React", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Scrum"],
-  "exp_depsDesc": "Participei da estruturação da DEPS Models, uma iniciativa que me proporcionou experiência real com clientes e projetos de verdade. Atuei em todas as etapas do desenvolvimento, utilizando metodologias ágeis, participando de reuniões com stakeholders e contribuindo tanto no front-end quanto no back-end das aplicações.",
   
-  "exp_compassTitle": "Compass UOL",
   "exp_compassRole": "Scholarship | Open Finance Potencializado pela AWS",
   "exp_compassCompany": "Compass UOL",
   "exp_compassPeriod": "Ago 2024 - Nov 2024",
@@ -62,9 +60,7 @@
     "Certificação AWS Certified Cloud Practitioner"
   ],
   "exp_compassTechnologies": ["JavaScript", "Node.js", "AWS", "Scrum", "Git", "Open Finance"],
-  "exp_compassDesc": "Fui selecionado para a bolsa Scholarship Open Finance da Compass UOL, onde aprofundei meus conhecimentos em desenvolvimento com foco em JavaScript e Node.js. Essa experiência tem sido essencial para meu crescimento profissional em um ambiente dinâmico e voltado à inovação financeira. Foi também o período onde pude tirar minha certificação AWS Certified Cloud Practitioner.",
 
-  "exp_domvsTitle": "Domvs IT",
   "exp_domvsRole": "Desenvolvedor de Software",
   "exp_domvsCompany": "Domvs IT",
   "exp_domvsPeriod": "Dez 2025 - Atual",
@@ -79,13 +75,10 @@
     "Utilização de ferramentas de cloud computing (Azure) para organização de sprints e fluxos de trabalho."
   ],
   "exp_domvsTechnologies": [".NET", "React", "C#", "Azure", "UML", "Scrum", "Pair Programming"],
-  "exp_domvsDesc": "Atuo como Desenvolvedor Full Stack, contribuindo no desenvolvimento de aplicações internas com .NET e React, participando de todo o ciclo de vida do software, desde a análise de requisitos até a implementação. Colaboro em equipe ágil (Scrum) e busco constante aprimoramento técnico.",
   
   "responsibilitiesTitle": "PRINCIPAIS RESPONSABILIDADES",
   "technologiesTitle": "TECNOLOGIAS & COMPETÊNCIAS",
 
-  "expNowTitle": "Em busca de novas oportunidades",
-  "expNowDesc": "Sigo aberto a oportunidades que não apenas contribuam para o meu desenvolvimento, mas que também me permitam gerar valor com os conhecimentos que venho construindo ao longo da minha trajetória.",
   "edu2023Title": "Ensino Médio Técnico Integrado em Informática",
   "edu2023Desc": "Ensino médio integrado ao técnico em Informática. Durante o curso, desenvolvi uma base sólida em programação e participei de projetos práticos que consolidaram meu interesse pela área de tecnologia.",
   "eduCurrentTitle": "Tecnologia em Sistemas para Internet",
@@ -94,8 +87,8 @@
   "eduInstitutionIFSul": "IFSul - Campus Charqueadas",
   "eduLocationCharqueadas": "Charqueadas, RS",
   "eduMainSubjects": "DISCIPLINAS E TECNOLOGIAS",
-  "eduSubjectsTSI": "Estruturas de Dados, Engenharia de Software, Back-end, Front-end, POO, Banco de Dados, HTML, CSS, JavaScript, Java, C, PHP, MySQL",
-  "eduSubjectsIT": "Lógica de Programação, Banco de Dados, POO, Segurança da Informação, de Computadores, HTML, CSS, JavaScript, Java, C, PHP, MySQL",
+  "eduSubjectsTSI": "Engenharia de Software, Estruturas de Dados, Desenvolvimento Web, POO, Banco de Dados, React, JavaScript, Java, C, PHP, SQL",
+  "eduSubjectsIT": "Lógica de Programação, Redes de Computadores, Hardware, Banco de Dados, POO, Java, C, PHP, HTML/CSS, SQL",
   "edu2023Period": "Jan 2021 - Dez 2023",
   "eduFooterSuperiorInProgress": "Superior em andamento",
   "eduFooterCertifications": "4+ certificações técnicas",
@@ -120,9 +113,6 @@
   
   "developedBy": "Desenvolvido por Raul Lize",
   "allRightsReserved": "Todos os direitos reservados",
-  
-  "year": "Ano",
-  "now": "Atualmente",
   
   "loading": "Carregando...",
   "preparingEnvironment": "Preparando o ambiente...",
