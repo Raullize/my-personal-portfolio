@@ -23,11 +23,11 @@ const Timeline = () => {
       year: '2025',
       title: t('timeline2025Title'),
       description: t('timeline2025Description')
-    },
-    {
-      year: t('now'),
-      title: t('timelineNowTitle'),
-      description: t('timelineNowDescription')
+    // },
+    // {
+    //   year: t('now'),
+    //   title: t('timelineNowTitle'),
+    //   description: t('timelineNowDescription')
     }
   ];
   
