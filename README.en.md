@@ -124,4 +124,4 @@ Feel free to contact me through the channels available in the portfolio!
 
 ---
 
-⭐ Developed with 💙 by Raul Lize - 2025
+⭐ Developed with 💙 by Raul Lize - 2026

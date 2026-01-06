@@ -124,4 +124,4 @@ Sinta-se à vontade para entrar em contato comigo através dos canais disponíve
 
 ---
 
-⭐ Desenvolvido com 💙 por Raul Lize - 2025
+⭐ Desenvolvido com 💙 por Raul Lize - 2026
