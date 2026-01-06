@@ -17,8 +17,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Raul Lize | Desenvolvedor Web",
-  description: "Portfólio profissional de Raul Lize, Desenvolvedor Web e estudante de Tecnologia em Sistemas para Internet.",
+  title: "Raul Lize | Full Stack Developer",
+  description: "Portfólio profissional de Raul Lize, Full Stack Developer e estudante de Tecnologia em Sistemas para Internet.",
   icons: {
     icon: "/favicon.ico"
   }
