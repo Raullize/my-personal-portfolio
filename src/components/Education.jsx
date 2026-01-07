@@ -11,24 +11,24 @@ const Education = () => {
   
   const educationItems = [
     {
-      title: t('eduCurrentTitle'),
-      institution: t('eduInstitutionIFSul'),
-      location: t('eduLocationCharqueadas'),
-      description: t('eduCurrentDesc'),
+      title: t('eduTsiTitle'),
+      institution: t('eduTsiInstitution'),
+      location: t('eduTsiLocation'),
+      description: t('eduTsiDesc'),
       status: 'inprogress',
       statusLabel: t('eduStatusInProgress'),
-      year: t('eduCurrentPeriod'),
-      subjects: t('eduSubjectsTSI').split(', ')
+      year: t('eduTsiPeriod'),
+      subjects: t('eduTsiSubjects').split(', ')
     },
     {
-      title: t('edu2023Title'),
-      institution: t('eduInstitutionIFSul'),
-      location: t('eduLocationCharqueadas'),
-      description: t('edu2023Desc'),
+      title: t('eduItTitle'),
+      institution: t('eduItInstitution'),
+      location: t('eduItLocation'),
+      description: t('eduItDesc'),
       status: 'completed',
       statusLabel: t('eduStatusCompleted'),
-      year: t('edu2023Period'),
-      subjects: t('eduSubjectsIT').split(', ')
+      year: t('eduItPeriod'),
+      subjects: t('eduItSubjects').split(', ')
     }
   ];
 
