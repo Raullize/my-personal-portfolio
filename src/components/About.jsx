@@ -9,7 +9,7 @@ const technologies = [
   { name: 'HTML', level: 'advanced' },
   { name: 'CSS', level: 'intermediate' },
   { name: 'JavaScript', level: 'intermediate' },
-  { name: 'TypeScript', level: 'intermediate' },
+  { name: 'TypeScript', level: 'basic' },
   { name: 'Java', level: 'basic' },
   { name: 'C', level: 'basic' },
   { name: 'Python', level: 'learning' },
