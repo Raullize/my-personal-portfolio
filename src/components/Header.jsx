@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslation } from '@/lib/i18n/useTranslation';
+import { useTranslation } from '@/i18n/useTranslation';
 import LanguageToggle from '@/components/LanguageToggle';
 import FadeIn from '@/components/ui/FadeIn';
 import GradientText from '@/components/ui/GradientText';

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslation } from '@/lib/i18n/useTranslation';
+import { useTranslation } from '@/i18n/useTranslation';
 import { FileDown } from 'lucide-react';
 
 const CVDownload = () => {

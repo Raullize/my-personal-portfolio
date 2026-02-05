@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, MapPin, ChevronDown } from 'lucide-react';
-import { useTranslation } from '@/lib/i18n/useTranslation';
+import { useTranslation } from '@/i18n/useTranslation';
 import DecryptedText from '@/components/ui/DecryptedText';
 import FadeIn from '@/components/ui/FadeIn';
 import GradientText from '@/components/ui/GradientText';

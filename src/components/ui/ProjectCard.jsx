@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useTranslation } from '@/lib/i18n/useTranslation';
+import { useTranslation } from '@/i18n/useTranslation';
 import { Globe, Github } from 'lucide-react';
 
 const ProjectCard = ({ title, description, imageUrl, siteUrl, githubUrl }) => {

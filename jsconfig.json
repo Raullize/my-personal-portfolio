@@ -5,7 +5,7 @@
       "@/*": ["./src/*"],
       "@/components/*": ["./src/components/*"],
       "@/hooks/*": ["./src/hooks/*"],
-      "@/lib/*": ["./src/lib/*"]
+      "@/i18n/*": ["./src/i18n/*"]
     }
   }
 }
