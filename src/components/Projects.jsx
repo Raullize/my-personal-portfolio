@@ -13,7 +13,7 @@ const projectsData = [
     description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
     description_en: 'E-commerce platform for natural and organic products, offering an intuitive and secure shopping experience.',
     imageUrl: '/projects/ArmazemGirassol.png',
-    siteUrl: 'https://www.armazemgirassol.com.br',
+    siteUrl: '',
     githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
   {
