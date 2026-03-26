@@ -39,25 +39,29 @@
   "exp_depsCompany": "DEPS Models",
   "exp_depsPeriod": "Mar 2024 - Out 2025",
   "exp_depsLocation": "Remoto, Brasil",
-  "exp_depsType": "Freelance",
+  "exp_depsType": "Freelancer",
   "exp_depsResponsibilities": [
-    "Estruturação e desenvolvimento da plataforma",
-    "Atuação no Front-end e Back-end das aplicações",
-    "Participação em reuniões com stakeholders",
-    "Utilização de metodologias ágeis"
+    "Desenvolvimento de aplicações web completas utilizando Node.js e TypeScript, garantia de performance e qualidade de código com boas práticas de engenharia de software.",
+    "Implementação de lógica de back-end e gerenciamento de comunicação com o banco de dados (PostgreSQL) , utilizando Prisma ORM, asseguramento de manipulação e fluxo de dados para as APIs.",
+    "Condução de negociação com clientes , alcance de alinhamento de expectativas e garantia de soluções aderentes às necessidades de negócio.",
+    "Otimização de fluxos de trabalho através da aplicação de metodologias ágeis (Scrum/Kanban).",
+    "Desenvolvimento de código com foco na interface e experiência do usuário (UI/UX).",
+    "Implementação de interface gráfica da aplicação, utilizando HTML5, CSS, Tailwind, React e Next.js, garantia de design responsivo e performance.",
+    "Aplicação de metodologias ágeis (Scrum e Kanban) para otimização de fluxo de trabalho e cronograma de entregas."
   ],
   "exp_depsTechnologies": ["React", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Scrum"],
   
-  "exp_compassRole": "Scholarship | Open Finance Potencializado pela AWS",
+  "exp_compassRole": "Scholarship Open Finance",
   "exp_compassCompany": "Compass UOL",
   "exp_compassPeriod": "Ago 2024 - Nov 2024",
   "exp_compassLocation": "Remoto, Brasil",
   "exp_compassType": "Estágio",
   "exp_compassResponsibilities": [
-    "Desenvolvimento focado em JavaScript e Node.js",
-    "Aprofundamento em metodologias ágeis e Scrum",
-    "Estudo de inovação financeira e Open Finance",
-    "Certificação AWS Certified Cloud Practitioner"
+    "Imersão e aprofundamento em Open Finance, inovação financeira e segurança da informação.",
+    "Estudo e aplicação de tecnologias emergentes, incluindo computação em nuvem (AWS), inteligência artificial e blockchain.",
+    "Desenvolvimento de uma aplicação em equipe voltado ao Open Finance, utilizando HTML, CSS, JavaScript, Node.js e arquitetura MVC.",
+    "Gestão do projeto com metodologias ágeis (Scrum/Kanban) e controle de versão via Git/GitHub, com conteinerização usando Docker.",
+    "Conquista da certificação AWS Cloud Practitioner."
   ],
   "exp_compassTechnologies": ["JavaScript", "Node.js", "AWS", "Scrum", "Git", "Open Finance"],
 
@@ -67,14 +71,14 @@
   "exp_domvsLocation": "Remoto, Brasil",
   "exp_domvsType": "Estágio",
   "exp_domvsResponsibilities": [
-    "Atuação como Desenvolvedor Full Stack, contribuindo ativamente no desenvolvimento de aplicações e sistemas internos, utilizando .NET e React.",
-    "Participação efetiva na fase inicial de software development lifecycle, incluindo a análise de requisitos e o desenvolvimento do modelo UML.",
-    "Colaboração em equipe ágil por meio da aplicação de metodologias Scrum, participando de dailys e sprint reviews.",
-    "Otimização da qualidade do código através de sessões de Pair Programming.",
-    "Imersão em trilhas de conhecimento para nivelamento técnico e condução de estudos autônomos via plataformas como Udemy.",
-    "Utilização de ferramentas de cloud computing (Azure) para organização de sprints e fluxos de trabalho."
+    "Atuação no desenvolvimento de aplicações e sistemas internos utilizando a stack .NET e React.",
+    "Implementação de interfaces escaláveis seguindo a metodologia Atomic Design para criação de componentes modulares e reaproveitáveis.",
+    "Construção e manutenção de APIs em .NET baseadas nos princípios de Clean Architecture e SOLID, garantindo baixo acoplamento e facilidade de manutenção.",
+    "Participação ativa em todas as etapas do ciclo de vida de desenvolvimento (SDLC), incluindo análise de requisitos e modelagem de sistemas com UML.",
+    "Colaboração em time ágil com metodologia Scrum, participando de reuniões diárias, sprint reviews e sessões de Pair Programming para otimização da qualidade do código.",
+    "Utilização do Azure DevOps para gestão de demandas (Boards) e controle de versionamento de código (Repos)."
   ],
-  "exp_domvsTechnologies": [".NET", "React", "C#", "Azure", "UML", "Scrum", "Pair Programming"],
+  "exp_domvsTechnologies": ["C#", ".NET", "React", "Azure DevOps", "Clean Architecture", "SOLID", "Atomic Design", "UML", "Scrum", "Pair Programming"],
   
   "responsibilitiesTitle": "PRINCIPAIS RESPONSABILIDADES",
   "technologiesTitle": "TECNOLOGIAS & COMPETÊNCIAS",

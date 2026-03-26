@@ -38,25 +38,29 @@
   "exp_depsCompany": "DEPS Models",
   "exp_depsPeriod": "Mar 2024 - Oct 2025",
   "exp_depsLocation": "Remote, Brazil",
-  "exp_depsType": "Freelance",
+  "exp_depsType": "Freelancer",
   "exp_depsResponsibilities": [
-    "Structuring and development of the platform",
-    "Working on Front-end and Back-end of applications",
-    "Participation in meetings with stakeholders",
-    "Use of agile methodologies"
+    "Development of complete web applications using Node.js and TypeScript, ensuring performance and code quality with good software engineering practices.",
+    "Implementation of back-end logic and management of communication with the database (PostgreSQL), using Prisma ORM, ensuring data manipulation and flow for the APIs.",
+    "Conducting negotiations with clients, achieving alignment of expectations and ensuring solutions adhere to business needs.",
+    "Optimization of workflows through the application of agile methodologies (Scrum/Kanban).",
+    "Code development focusing on the user interface and experience (UI/UX).",
+    "Implementation of the application's graphical interface using HTML5, CSS, Tailwind, React, and Next.js, ensuring responsive design and performance.",
+    "Application of agile methodologies (Scrum and Kanban) to optimize workflow and delivery schedules."
   ],
   "exp_depsTechnologies": ["React", "Next.js", "Node.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Git", "Scrum"],
 
-  "exp_compassRole": "Scholarship | Open Finance Powered by AWS",
+  "exp_compassRole": "Scholarship Open Finance",
   "exp_compassCompany": "Compass UOL",
   "exp_compassPeriod": "Aug 2024 - Nov 2024",
   "exp_compassLocation": "Remote, Brazil",
   "exp_compassType": "Internship",
   "exp_compassResponsibilities": [
-    "Development focused on JavaScript and Node.js",
-    "Deepening in agile methodologies and Scrum",
-    "Study of financial innovation and Open Finance",
-    "AWS Certified Cloud Practitioner Certification"
+    "Immersion and deepening in Open Finance, financial innovation, and information security.",
+    "Study and application of emerging technologies, including cloud computing (AWS), artificial intelligence, and blockchain.",
+    "Development of a team application focused on Open Finance, using HTML, CSS, JavaScript, Node.js, and MVC architecture.",
+    "Project management with agile methodologies (Scrum/Kanban) and version control via Git/GitHub, with containerization using Docker.",
+    "Achievement of the AWS Cloud Practitioner certification."
   ],
   "exp_compassTechnologies": ["JavaScript", "Node.js", "AWS", "Scrum", "Git", "Open Finance"],
 
@@ -66,14 +70,14 @@
   "exp_domvsLocation": "Remote, Brazil",
   "exp_domvsType": "Internship",
   "exp_domvsResponsibilities": [
-    "Acting as a Full Stack Developer, actively contributing to the development of internal applications and systems using .NET and React.",
-    "Effective participation in the initial phase of the software development lifecycle, including requirements analysis and UML modeling.",
-    "Collaboration in an agile team through the application of Scrum methodologies, participating in dailys and sprint reviews.",
-    "Optimization of code quality through Pair Programming sessions.",
-    "Immersion in knowledge tracks for technical leveling and conducting autonomous studies via platforms such as Udemy.",
-    "Use of cloud computing tools (Azure) for organizing sprints and workflows."
+    "Acting in the development of internal applications and systems using the .NET and React stack.",
+    "Implementation of scalable interfaces following the Atomic Design methodology to create modular and reusable components.",
+    "Construction and maintenance of .NET APIs based on Clean Architecture and SOLID principles, ensuring low coupling and ease of maintenance.",
+    "Active participation in all stages of the software development lifecycle (SDLC), including requirements analysis and system modeling with UML.",
+    "Collaboration in an agile team with Scrum methodology, participating in daily meetings, sprint reviews, and Pair Programming sessions to optimize code quality.",
+    "Use of Azure DevOps for demand management (Boards) and source code version control (Repos)."
   ],
-  "exp_domvsTechnologies": [".NET", "React", "C#", "Azure", "UML", "Scrum", "Pair Programming"],
+  "exp_domvsTechnologies": ["C#", ".NET", "React", "Azure DevOps", "Clean Architecture", "SOLID", "Atomic Design", "UML", "Scrum", "Pair Programming"],
 
   "responsibilitiesTitle": "MAIN RESPONSIBILITIES",
   "technologiesTitle": "TECHNOLOGIES & SKILLS",
