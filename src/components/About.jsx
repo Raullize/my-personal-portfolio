@@ -27,7 +27,7 @@ const technologies = [
   { name: 'GitHub', level: 'intermediate' },
   { name: 'Docker', level: 'learning' },
   { name: 'Linux', level: 'learning' },
-  { name: 'AWS', level: 'learning' },
+  { name: 'AWS', level: 'basic' },
 ];
 
 const About = () => {
