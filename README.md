@@ -32,23 +32,23 @@ This is my personal professional portfolio project, developed to showcase my ski
 To run this project locally, first clone the repository and install the dependencies.
 
 ```bash
-$ npm install
+$ pnpm install
 ```
 
 ## Running the app
 
 ```bash
 # development mode
-$ npm run dev
+$ pnpm dev
 
 # build for production
-$ npm run build
+$ pnpm build
 
 # production mode
-$ npm start
+$ pnpm start
 
 # linting
-$ npm run lint
+$ pnpm lint
 ```
 
 ## Support
