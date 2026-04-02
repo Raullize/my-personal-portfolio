@@ -13,13 +13,13 @@
   
   "aboutTitle": "Olá",
   "aboutSubtitle": "Bem-vindo(a) ao meu portfólio!",
-  "aboutIntro": "Sou estudante de Tecnologia em Sistemas para Internet no IFSul – Campus Charqueadas, com foco em desenvolvimento web e criação de soluções digitais modernas e eficientes. Ao longo da minha trajetória, venho trabalhando com diversas tecnologias e acumulando experiências valiosas em projetos reais.",
+  "aboutIntro": "Sou Desenvolvedor Full Stack apaixonado por criar soluções digitais modernas, escaláveis e eficientes. Atualmente atuo com tecnologias como .NET (C#) e React, focando sempre em performance e boas práticas de arquitetura. Paralelo à minha atuação no mercado, aprimoro minha base técnica através da graduação em Sistemas para Internet pelo IFSul.",
   
   "experienceTitle": "Tenho experiência com:",
   "frontendSkills": "Front-end: HTML, CSS, JavaScript, TypeScript, ReactJS, Next.js, Tailwind",
-  "backendSkills": "Back-end: Node.js",
-  "databaseSkills": "Bancos de dados: MySQL, PostgreSQL e MongoDB",
-  "devopsSkills": "DevOps: Docker",
+  "backendSkills": "Back-end: .NET, C#, Node.js",
+  "databaseSkills": "Bancos de dados: PostgreSQL, MySQL e MongoDB",
+  "devopsSkills": "DevOps e Cloud: AWS, Azure DevOps e Docker",
   "versioningSkills": "Versionamento: Git e GitHub",
   "additionalSkills": "Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e PHP, o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.",
   

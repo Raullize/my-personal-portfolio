@@ -13,12 +13,12 @@
   
   "aboutTitle": "Hello",
   "aboutSubtitle": "Welcome to my portfolio!",
-  "aboutIntro": "I am a student of Internet Systems Technology at IFSul - Campus Charqueadas, focusing on web development and creating modern and efficient digital solutions. Throughout my journey, I have been working with various technologies and accumulating valuable experiences in real projects.",
+  "aboutIntro": "I am a Full Stack Developer passionate about creating modern, scalable, and efficient digital solutions. I currently work with technologies such as .NET (C#) and React, always focusing on performance and good architectural practices. Alongside my work in the market, I improve my technical foundation through my degree in Internet Systems at IFSul.",
   "experienceTitle": "I have experience with:",
   "frontendSkills": "Front-end: HTML, CSS, JavaScript, TypeScript, ReactJS, Next.js, Tailwind",
-  "backendSkills": "Back-end: Node.js",
-  "databaseSkills": "Databases: MySQL, PostgreSQL and MongoDB",
-  "devopsSkills": "DevOps: Docker",
+  "backendSkills": "Back-end: .NET, C#, Node.js",
+  "databaseSkills": "Databases: PostgreSQL, MySQL and MongoDB",
+  "devopsSkills": "DevOps and Cloud: AWS, Azure DevOps and Docker",
   "versioningSkills": "Version Control: Git and GitHub",
   "additionalSkills": "I also have knowledge in languages and tools such as Java, C, Python and PHP, which provides me with a solid foundation to work in different contexts and technical challenges.",
   
