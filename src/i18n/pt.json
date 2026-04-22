@@ -85,11 +85,9 @@
   "exp_domvsPeriodJunior": "Abr 2026 - Atual",
   "exp_domvsTypeJunior": "Júnior",
   "exp_domvsResponsibilitiesJunior": [
-    "Atuação no desenvolvimento e sustentação de aplicações utilizando .NET e React.",
-    "Responsável pela implementação de novas funcionalidades seguindo padrões de alta disponibilidade e performance.",
-    "Colaboração direta com o time de arquitetura para evolução de sistemas baseados em microserviços e infraestrutura cloud."
+    "Atuação como Desenvolvedor Full Stack Júnior alocado na Finnet, participando ativamente do ciclo de vida de desenvolvimento de soluções financeiras escaláveis."
   ],
-  "exp_domvsTechnologiesJunior": ["C#", ".NET", "React", "AWS", "Clean Architecture", "SOLID"],
+  "exp_domvsTechnologiesJunior": ["AWS", "Clean Architecture", "SOLID"],
 
   "exp_domvsRoleIntern": "Estagiário em Desenvolvimento Full Stack",
   "exp_domvsPeriodIntern": "Dez 2025 - Mar 2026",
