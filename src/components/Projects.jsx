@@ -8,73 +8,57 @@ import ProjectCard from '@/components/ui/ProjectCard';
 
 const projectsData = [
   {
-    title: 'AprovaAI',
-    title_en: 'AprovaAI',
-    description: 'Plataforma inovadora de estudos focada na preparação para exames através de simulados por níveis, gamificação e feedback detalhado. (TCC em desenvolvimento)',
-    description_en: 'Innovative study platform focused on exam preparation with level-based mock exams, gamification, and detailed feedback. (Capstone project in development)',
+    titleKey: 'proj_aprovaaiTitle',
+    descKey: 'proj_aprovaaiDesc',
     imageUrl: '/projects/aprova-ai.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/AprovaAI'
   },
   {
-    title: 'Armazém Girassol',
-    title_en: 'Armazém Girassol',
-    description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
-    description_en: 'E-commerce platform for natural and organic products, offering an intuitive and secure shopping experience.',
+    titleKey: 'proj_armazemTitle',
+    descKey: 'proj_armazemDesc',
     imageUrl: '/projects/armazem-girassol.png',
     siteUrl: '',
     githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
   {
-    title: 'DEPS Models',
-    title_en: 'DEPS Models',
-    description: 'Landing Page da empresa DEPS Models apresentando sua cultura e serviços oferecidos no mercado de desenvolvimento.',
-    description_en: 'DEPS Models company landing page showcasing its culture and services offered in the development market.',
+    titleKey: 'proj_depsTitle',
+    descKey: 'proj_depsDesc',
     imageUrl: '/projects/deps-models.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/deps-models'
   },
   {
-    title: 'octo.hub',
-    title_en: 'octo.hub',
-    description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
-    description_en: 'Landing page for octo.hub company with detailed presentation of its services and innovative technological solutions.',
+    titleKey: 'proj_octoTitle',
+    descKey: 'proj_octoDesc',
     imageUrl: '/projects/octo-hub.png',
     siteUrl: 'https://octo-hub-site.vercel.app/',
     githubUrl: ''
   },
   {
-    title: 'MyGYM',
-    title_en: 'MyGYM',
-    description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
-    description_en: 'Landing Page designed for gyms without digital presence, providing information about services, plans and opening hours.',
+    titleKey: 'proj_mygymTitle',
+    descKey: 'proj_mygymDesc',
     imageUrl: '/projects/my-gym.png',
     siteUrl: 'https://my-gym-academy.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGym'
   },
   {
-    title: 'DeepFocus',
-    title_en: 'DeepFocus',
-    description: 'Pomodoro personalizável, minimalista e moderno que ajuda a manter o foco durante sessões de trabalho ou estudo.',
-    description_en: 'Customizable, minimalist and modern Pomodoro timer that helps maintain focus during work or study sessions.',
+    titleKey: 'proj_deepfocusTitle',
+    descKey: 'proj_deepfocusDesc',
     imageUrl: '/projects/deep-focus.png',
     siteUrl: 'https://deepfocus-pomodoro.vercel.app',
     githubUrl: 'https://github.com/Raullize/deep-focus'
   },
   {
-    title: 'ContaComigo',
-    title_en: 'ContaComigo',
-    description: 'Plataforma web para gerenciamento de finanças pessoais com integração ao Open Finance. Permite visualizar contas, transações e metas financeiras em um único painel.',
-    description_en: 'Web platform for personal finance management with Open Finance integration. Allows viewing accounts, transactions and financial goals in a single panel.',
+    titleKey: 'proj_contacomigoTitle',
+    descKey: 'proj_contacomigoDesc',
     imageUrl: '/projects/conta-comigo.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/conta-comigo'
   },
   {
-    title: 'MIRC',
-    title_en: 'MIRC',
-    description: 'Mapeador Inteligente de Resiliência Climática (MIRC): Plataforma web integrada com chatbot IA e geolocalização para alertas precoces e orientação de riscos climáticos (inundações) no Rio Grande do Sul.',
-    description_en: 'Intelligent Climate Resilience Mapper (MIRC): Web platform integrated with AI chatbot and geolocation for early warnings and climate risk guidance (floods) in Rio Grande do Sul.',
+    titleKey: 'proj_mircTitle',
+    descKey: 'proj_mircDesc',
     imageUrl: '/projects/mirc.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2025'
@@ -82,11 +66,11 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  const { t, language } = useTranslation();
+  const { t } = useTranslation();
   
   const projects = projectsData.map(project => ({
-    title: language === 'pt-BR' ? project.title : project.title_en,
-    description: language === 'pt-BR' ? project.description : project.description_en,
+    title: t(project.titleKey),
+    description: t(project.descKey),
     imageUrl: project.imageUrl,
     siteUrl: project.siteUrl,
     githubUrl: project.githubUrl
