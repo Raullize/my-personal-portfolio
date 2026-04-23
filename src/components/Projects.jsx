@@ -8,6 +8,15 @@ import ProjectCard from '@/components/ui/ProjectCard';
 
 const projectsData = [
   {
+    title: 'AprovaAI',
+    title_en: 'AprovaAI',
+    description: 'Plataforma inovadora de estudos focada na preparação para exames através de simulados por níveis, gamificação e feedback detalhado. (TCC em desenvolvimento)',
+    description_en: 'Innovative study platform focused on exam preparation with level-based mock exams, gamification, and detailed feedback. (Capstone project in development)',
+    imageUrl: '/projects/aprova-ai.png',
+    siteUrl: '',
+    githubUrl: 'https://github.com/Raullize/AprovaAI'
+  },
+  {
     title: 'Armazém Girassol',
     title_en: 'Armazém Girassol',
     description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
