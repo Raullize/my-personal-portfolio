@@ -12,7 +12,7 @@ const projectsData = [
     title_en: 'Armazém Girassol',
     description: 'Plataforma de e-commerce para produtos naturais e orgânicos, oferecendo uma experiência de compra intuitiva e segura.',
     description_en: 'E-commerce platform for natural and organic products, offering an intuitive and secure shopping experience.',
-    imageUrl: '/projects/ArmazemGirassol.png',
+    imageUrl: '/projects/armazem-girassol.png',
     siteUrl: '',
     githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
@@ -21,16 +21,16 @@ const projectsData = [
     title_en: 'DEPS Models',
     description: 'Landing Page da empresa DEPS Models apresentando sua cultura e serviços oferecidos no mercado de desenvolvimento.',
     description_en: 'DEPS Models company landing page showcasing its culture and services offered in the development market.',
-    imageUrl: '/projects/DepsModels.png',
+    imageUrl: '/projects/deps-models.png',
     siteUrl: '',
-    githubUrl: ''
+    githubUrl: 'https://github.com/Raullize/deps-models'
   },
   {
     title: 'octo.hub',
     title_en: 'octo.hub',
     description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
     description_en: 'Landing page for octo.hub company with detailed presentation of its services and innovative technological solutions.',
-    imageUrl: '/projects/OctoHub.png',
+    imageUrl: '/projects/octo-hub.png',
     siteUrl: 'https://octo-hub-site.vercel.app/',
     githubUrl: ''
   },
@@ -39,7 +39,7 @@ const projectsData = [
     title_en: 'MyGYM',
     description: 'Landing Page projetada para academias sem presença digital, oferecendo informações sobre serviços, planos e horários de funcionamento.',
     description_en: 'Landing Page designed for gyms without digital presence, providing information about services, plans and opening hours.',
-    imageUrl: '/projects/MyGym.png',
+    imageUrl: '/projects/my-gym.png',
     siteUrl: 'https://my-gym-academy.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGym'
   },
@@ -48,7 +48,7 @@ const projectsData = [
     title_en: 'DeepFocus',
     description: 'Pomodoro personalizável, minimalista e moderno que ajuda a manter o foco durante sessões de trabalho ou estudo.',
     description_en: 'Customizable, minimalist and modern Pomodoro timer that helps maintain focus during work or study sessions.',
-    imageUrl: '/projects/DeepFocus.png',
+    imageUrl: '/projects/deep-focus.png',
     siteUrl: 'https://deepfocus-pomodoro.vercel.app',
     githubUrl: 'https://github.com/Raullize/deep-focus'
   },
@@ -57,7 +57,7 @@ const projectsData = [
     title_en: 'ContaComigo',
     description: 'Plataforma web para gerenciamento de finanças pessoais com integração ao Open Finance. Permite visualizar contas, transações e metas financeiras em um único painel.',
     description_en: 'Web platform for personal finance management with Open Finance integration. Allows viewing accounts, transactions and financial goals in a single panel.',
-    imageUrl: '/projects/ContaComigo.png',
+    imageUrl: '/projects/conta-comigo.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/conta-comigo'
   },
@@ -66,7 +66,7 @@ const projectsData = [
     title_en: 'MIRC',
     description: 'Mapeador Inteligente de Resiliência Climática (MIRC): Plataforma web integrada com chatbot IA e geolocalização para alertas precoces e orientação de riscos climáticos (inundações) no Rio Grande do Sul.',
     description_en: 'Intelligent Climate Resilience Mapper (MIRC): Web platform integrated with AI chatbot and geolocation for early warnings and climate risk guidance (floods) in Rio Grande do Sul.',
-    imageUrl: '/projects/MIRC.png',
+    imageUrl: '/projects/mirc.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2025'
   }
