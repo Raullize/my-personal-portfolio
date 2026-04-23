@@ -17,22 +17,13 @@ const projectsData = [
     githubUrl: 'https://github.com/depsModels/armazem-girassol'
   },
   {
-    title: 'StockDeps',
-    title_en: 'StockDeps',
-    description: 'Sistema de gerenciamento de estoque e inventário, desenvolvido para otimizar o controle de produtos e recursos.',
-    description_en: 'Inventory and stock management system, developed to optimize product and resource control.',
-    imageUrl: '/projects/StockDeps.png',
-    siteUrl: '',
-    githubUrl: 'https://github.com/depsModels/stockDeps'
-  },
-  {
     title: 'DEPS Models',
     title_en: 'DEPS Models',
     description: 'Landing Page da empresa DEPS Models apresentando sua cultura e serviços oferecidos no mercado de desenvolvimento.',
     description_en: 'DEPS Models company landing page showcasing its culture and services offered in the development market.',
     imageUrl: '/projects/DepsModels.png',
-    siteUrl: 'https://depsmodels.com',
-    githubUrl: 'https://github.com/depsModels/deps'
+    siteUrl: '',
+    githubUrl: ''
   },
   {
     title: 'octo.hub',
@@ -40,8 +31,8 @@ const projectsData = [
     description: 'Landing Page da empresa octo.hub com apresentação detalhada de seus serviços e soluções tecnológicas inovadoras.',
     description_en: 'Landing page for octo.hub company with detailed presentation of its services and innovative technological solutions.',
     imageUrl: '/projects/OctoHub.png',
-    siteUrl: 'https://octohub.site',
-    githubUrl: 'https://github.com/depsModels/octoHub'
+    siteUrl: 'https://octo-hub-site.vercel.app/',
+    githubUrl: ''
   },
   {
     title: 'MyGYM',
