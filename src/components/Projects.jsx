@@ -18,8 +18,8 @@ const projectsData = [
     titleKey: 'proj_armazemTitle',
     descKey: 'proj_armazemDesc',
     imageUrl: '/projects/armazem-girassol.png',
-    siteUrl: '',
-    githubUrl: 'https://github.com/depsModels/armazem-girassol'
+    siteUrl: 'https://armazem-girassol.vercel.app/',
+    githubUrl: 'https://github.com/Raullize/armazem-girassol'
   },
   {
     titleKey: 'proj_depsTitle',
