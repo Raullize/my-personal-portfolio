@@ -33,7 +33,7 @@ const projectsData = [
     descKey: 'proj_octoDesc',
     imageUrl: '/projects/octo-hub.png',
     siteUrl: 'https://octo-hub-site.vercel.app/',
-    githubUrl: ''
+    githubUrl: 'https://github.com/Raullize/octoHub'
   },
   {
     titleKey: 'proj_mygymTitle',
