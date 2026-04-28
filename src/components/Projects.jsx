@@ -25,7 +25,7 @@ const projectsData = [
     titleKey: 'proj_depsTitle',
     descKey: 'proj_depsDesc',
     imageUrl: '/projects/deps-models.png',
-    siteUrl: '',
+    siteUrl: 'https://depsmodels.com/',
     githubUrl: 'https://github.com/Raullize/deps-models'
   },
   {
