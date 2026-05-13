@@ -26,7 +26,7 @@ const technologies = [
   { name: 'Git', level: 'intermediate' },
   { name: 'GitHub', level: 'intermediate' },
   { name: 'Docker', level: 'learning' },
-  { name: 'Linux', level: 'learning' },
+  { name: 'Linux', level: 'basic' },
   { name: 'AWS', level: 'basic' },
 ];
 
