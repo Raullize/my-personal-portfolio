@@ -69,12 +69,12 @@
   "exp_compassType": "Estágio",
   "exp_compassResponsibilities": [
     "Imersão e aprofundamento em Open Finance, inovação financeira e segurança da informação.",
-    "Estudo e aplicação de tecnologias emergentes, incluindo computação em nuvem (AWS), inteligência artificial e blockchain.",
+    "Estudo e aplicação de tecnologias emergentes, incluindo computação em nuvem (Amazon Web Services), inteligência artificial e blockchain.",
     "Desenvolvimento de uma aplicação em equipe voltado ao Open Finance, utilizando HTML, CSS, JavaScript, Node.js e arquitetura MVC.",
     "Gestão do projeto com metodologias ágeis (Scrum/Kanban) e controle de versão via Git/GitHub, com conteinerização usando Docker.",
     "Conquista da certificação AWS Cloud Practitioner."
   ],
-  "exp_compassTechnologies": ["JavaScript", "Node.js", "AWS", "Scrum", "Git", "Open Finance"],
+  "exp_compassTechnologies": ["JavaScript", "Node.js", "Amazon Web Services", "Scrum", "Git", "Open Finance"],
 
   "exp_domvsCompany": "Domvs IT",
   "exp_domvsCompanyDescription": "TI, Soluções em Nuvem e Consultoria. Grande Porte/Consultoria Multinacional",
@@ -87,7 +87,7 @@
   "exp_domvsResponsibilitiesJunior": [
     "Atuação como Desenvolvedor Full Stack Júnior alocado na Finnet, participando ativamente do ciclo de vida de desenvolvimento de soluções financeiras escaláveis."
   ],
-  "exp_domvsTechnologiesJunior": ["AWS", "Clean Architecture", "SOLID"],
+  "exp_domvsTechnologiesJunior": ["Amazon Web Services", "AWS SQS", "Java", "Spring Boot", "Arquitetura Hexagonal", "SOLID"],
 
   "exp_domvsRoleIntern": "Estagiário em Desenvolvimento Full Stack",
   "exp_domvsPeriodIntern": "Dez 2025 - Mar 2026",
@@ -95,12 +95,12 @@
   "exp_domvsResponsibilitiesIntern": [
     "Atuação no desenvolvimento de aplicações e sistemas internos utilizando a stack .NET e React.",
     "Implementação de interfaces escaláveis seguindo a metodologia Atomic Design para criação de componentes modulares e reaproveitáveis.",
-    "Construção e manutenção de APIs em .NET baseadas nos princípios de Clean Architecture e SOLID, garantindo baixo acoplamento e facilidade de manutenção.",
+    "Construção e manutenção de APIs em .NET baseadas nos princípios de Arquitetura Hexagonal e SOLID, garantindo baixo acoplamento e facilidade de manutenção.",
     "Participação ativa em todas as etapas do ciclo de vida de desenvolvimento (SDLC), incluindo análise de requisitos e modelagem de sistemas com UML.",
     "Colaboração em time ágil com metodologia Scrum, participando de reuniões diárias, sprint reviews e sessões de Pair Programming para otimização da qualidade do código.",
     "Utilização do Azure DevOps para gestão de demandas (Boards) e controle de versionamento de código (Repos)."
   ],
-  "exp_domvsTechnologiesIntern": ["C#", ".NET", "React", "Azure DevOps", "Clean Architecture", "SOLID", "Atomic Design", "UML", "Scrum", "Pair Programming"],
+  "exp_domvsTechnologiesIntern": ["C#", ".NET", "React", "Azure DevOps", "Arquitetura Hexagonal", "SOLID", "Atomic Design", "UML", "Scrum", "Pair Programming"],
   
   "responsibilitiesTitle": "PRINCIPAIS RESPONSABILIDADES",
   "technologiesTitle": "TECNOLOGIAS & COMPETÊNCIAS",
