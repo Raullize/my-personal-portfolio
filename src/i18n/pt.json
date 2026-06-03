@@ -86,7 +86,13 @@
   "exp_domvsPeriodJunior": "Abr 2026 - Atual",
   "exp_domvsTypeJunior": "Júnior",
   "exp_domvsResponsibilitiesJunior": [
-    "Atuação como Desenvolvedor Full Stack Júnior alocado na Finnet, participando ativamente do ciclo de vida de desenvolvimento de soluções financeiras escaláveis."
+    "Atuação como Desenvolvedor Full Stack Júnior alocado na Finnet, participando da evolução de soluções críticas e de alto impacto utilizadas em diferentes áreas da empresa.",
+    "Atuação no desenvolvimento e manutenção de soluções financeiras escaláveis, com foco em estabilidade, rastreabilidade e qualidade de entrega.",
+    "Participação em análises técnicas, refatorações e evolução de fluxos críticos do sistema.",
+    "Implementação e ajuste de integrações com serviços em nuvem, filas SQS e processos assíncronos.",
+    "Apoio à revisão de regras de negócio, contratos de payload, idempotência e observabilidade dos fluxos.",
+    "Colaboração com o time na identificação de melhorias, redução de duplicidades e refinamento de arquitetura.",
+    "Uso de inteligência artificial como apoio ao desenvolvimento, análise e automação de tarefas, fortalecendo a produtividade, melhorando a qualidade das entregas e acelerando a resolução de demandas."
   ],
   "exp_domvsTechnologiesJunior": ["Amazon Web Services", "AWS SQS", "Java", "Spring Boot", "Arquitetura Hexagonal", "SOLID", "Virtual Box", "Power Shell"],
 
