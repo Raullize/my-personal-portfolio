@@ -38,7 +38,7 @@ const Header = () => {
               colors={["#1d4ed8", "#3b82f6", "#22d3ee", "#1d4ed8"]} 
               animationSpeed={2.5}
             >
-              Raul Lize
+              Raul Lize Teixeira
             </GradientText>
           </h1>
         </FadeIn>
