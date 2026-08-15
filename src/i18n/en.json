@@ -1,7 +1,7 @@
 {
-  "jobTitle": "Full Stack Developer",
+  "jobTitle": "Junior Full Stack Developer",
   "location": "Rio Grande do Sul, RS - Brazil",
-  "tagline": "Connecting creativity and technology to transform ideas into efficient and relevant digital solutions",
+  "tagline": "Building scalable, high-performance solutions that deliver real business value",
   "seeMore": "Learn more",
   
   "about": "About",
@@ -13,17 +13,17 @@
   
   "aboutTitle": "Hello",
   "aboutSubtitle": "Welcome to my portfolio!",
-  "aboutIntro": "I am a Full Stack Developer passionate about creating modern, scalable, and efficient digital solutions. I currently work with technologies such as .NET (C#) and React, always focusing on performance and good architectural practices. Alongside my work in the market, I improve my technical foundation through my degree in Internet Systems at IFSul.",
+  "aboutIntro": "I am a Junior Full Stack Developer at FINNET, working on the development of scalable and high-performance solutions with Java (Spring Boot) in the financial ecosystem. I have a solid and versatile technical foundation on the back-end, easily transitioning between .NET (C#), Spring Boot, and NestJS (Node.js), in addition to experience building modern and responsive interfaces using React and TypeScript.",
   "experienceTitle": "I have experience with:",
-  "frontendSkills": "Front-end: HTML, CSS, JavaScript, TypeScript, ReactJS, Next.js, Tailwind",
-  "backendSkills": "Back-end: .NET, C#, Node.js",
+  "frontendSkills": "Front-end: TypeScript, ReactJS, Next.js, Tailwind",
+  "backendSkills": "Back-end: .NET, Spring Boot, NestJS",
   "databaseSkills": "Databases: PostgreSQL, MySQL and MongoDB",
   "devopsSkills": "DevOps and Cloud: AWS, Azure DevOps and Docker",
   "versioningSkills": "Version Control: Git and GitHub",
-  "additionalSkills": "I also have knowledge in languages and tools such as Java, C, Python and PHP, which provides me with a solid foundation to work in different contexts and technical challenges.",
+  "additionalSkills": "On a daily basis, I prioritize code quality by applying good software engineering practices, SOLID principles, Clean Architecture, and consuming/developing RESTful APIs. I also integrate DevOps practices with Docker and have cloud knowledge, being certified as AWS Cloud Practitioner, with practical experience in agile methodologies (Scrum/Kanban).",
   
-  "professionalProfile": "As a professional, I am organized, communicative, and collaborative. I have intermediate English skills and am familiar with agile methodologies, information security, artificial intelligence, cloud computing, and Open Finance. Committed to delivering quality results, I am always seeking continuous improvement and constant learning.",
-  "technologies": "Technologies",
+  "professionalProfile": "I chose software development for the impact of transforming complex problems into efficient products. Beyond the technical side, I value clear communication, teamwork, and a proactive stance toward continuous learning, always focusing on delivering real business value. In my free time, I enjoy exploring new technologies and participating in development communities, always seeking to evolve technically and build solutions that make a difference.",
+  "technologies": "Technologies & Tools",
   "basic": "Basic",
   "intermediate": "Intermediate",
   "advanced": "Advanced",

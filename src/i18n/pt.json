@@ -1,7 +1,7 @@
 {
-  "jobTitle": "Desenvolvedor Full Stack",
+  "jobTitle": "Desenvolvedor Full Stack Júnior",
   "location": "Rio Grande do Sul, RS - Brasil",
-  "tagline": "Conectando criatividade e tecnologia para transformar ideias em soluções digitais eficientes e relevantes",
+  "tagline": "Desenvolvendo soluções escaláveis e de alta performance que geram valor real para o negócio",
   "seeMore": "Saiba mais",
   
   "about": "Sobre",
@@ -13,18 +13,18 @@
   
   "aboutTitle": "Olá",
   "aboutSubtitle": "Bem-vindo(a) ao meu portfólio!",
-  "aboutIntro": "Sou Desenvolvedor Full Stack apaixonado por criar soluções digitais modernas, escaláveis e eficientes. Atualmente atuo com tecnologias como .NET (C#) e React, focando sempre em performance e boas práticas de arquitetura. Paralelo à minha atuação no mercado, aprimoro minha base técnica através da graduação em Sistemas para Internet pelo IFSul.",
+  "aboutIntro": "Sou Desenvolvedor Full Stack Júnior na FINNET, atuando no desenvolvimento de soluções escaláveis e de alta performance com Java (Spring Boot) no ecossistema financeiro. Tenho uma base técnica sólida e versátil no back-end, transitando com facilidade entre .NET (C#), Spring Boot e NestJS (Node.js), além de experiência na construção de interfaces modernas e responsivas utilizando React e TypeScript.",
   
   "experienceTitle": "Tenho experiência com:",
-  "frontendSkills": "Front-end: HTML, CSS, JavaScript, TypeScript, ReactJS, Next.js, Tailwind",
-  "backendSkills": "Back-end: .NET, C#, Node.js",
+  "frontendSkills": "Front-end: TypeScript, ReactJS, Next.js, Tailwind",
+  "backendSkills": "Back-end: .NET, Spring Boot, NestJS",
   "databaseSkills": "Bancos de dados: PostgreSQL, MySQL e MongoDB",
   "devopsSkills": "DevOps e Cloud: AWS, Azure DevOps e Docker",
   "versioningSkills": "Versionamento: Git e GitHub",
-  "additionalSkills": "Também possuo conhecimentos em linguagens e ferramentas como Java, C, Python e PHP, o que me proporciona uma base sólida para atuar em diferentes contextos e desafios técnicos.",
+  "additionalSkills": "No dia a dia, prezo pela qualidade do código aplicando boas práticas de engenharia de software, princípios SOLID, Clean Architecture e consumo/desenvolvimento de APIs RESTful. Também integro práticas de DevOps com Docker e possuo conhecimentos em nuvem, sendo certificado como AWS Cloud Practitioner, com vivência prática em metodologias ágeis (Scrum/Kanban).",
   
-  "professionalProfile": "Como profissional, sou organizado, comunicativo e colaborativo. Tenho inglês intermediário, sou familiarizado com metodologias ágeis, segurança da informação, inteligência artificial, computação em nuvem e Open Finance. Comprometido com a entrega de resultados de qualidade, estou sempre em busca de aprimoramento contínuo e aprendizado constante.",
-  "technologies": "Tecnologias",
+  "professionalProfile": "Escolhi o desenvolvimento de software pelo impacto de transformar problemas complexos em produtos eficientes. Além da parte técnica, valorizo comunicação clara, trabalho em equipe e postura proativa para aprendizado contínuo, sempre com foco em gerar valor real para o negócio. Nas minhas horas vagas, gosto de explorar novas tecnologias e participar de comunidades de desenvolvimento, sempre buscando evoluir tecnicamente e construir soluções que façam a diferença.",
+  "technologies": "Tecnologias e Ferramentas",
   "basic": "Básico",
   "intermediate": "Intermediário",
   "advanced": "Avançado",
