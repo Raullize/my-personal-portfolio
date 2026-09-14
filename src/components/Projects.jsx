@@ -54,7 +54,7 @@ const projectsData = [
     descKey: 'proj_contacomigoDesc',
     imageUrl: '/projects/conta-comigo.png',
     siteUrl: '',
-    githubUrl: 'https://github.com/Raullize/conta-comigo'
+    githubUrl: 'https://github.com/Raullize/ContaComigo'
   },
   {
     titleKey: 'proj_mircTitle',
