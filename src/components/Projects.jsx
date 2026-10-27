@@ -17,7 +17,13 @@ const projectsData = [
   {
     titleKey: 'proj_armazemTitle',
     descKey: 'proj_armazemDesc',
-    images: ['/projects/armazem-girassol.png'],
+    images: [
+      '/projects/armazem-home.png',
+      '/projects/armazem-categories.png',
+      '/projects/armazem-new-arrivals.png',
+      '/projects/armazem-products.png',
+      '/projects/armazem-newsletter.png'
+    ],
     siteUrl: 'https://armazem-girassol.vercel.app/',
     githubUrl: 'https://github.com/Raullize/armazem-girassol'
   },
