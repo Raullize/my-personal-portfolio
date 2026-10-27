@@ -66,7 +66,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           transition={{ duration: 0.5 }}
         >
           <div className="inline-block relative">
-            <span className="text-4xl sm:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 bg-size-200 animate-gradient">
+            <span className="text-4xl sm:text-6xl font-bold font-heading bg-clip-text text-transparent bg-gradient-to-r from-primary-500 via-accent-500 to-primary-500 bg-size-200 animate-gradient">
               RL
             </span>
             <motion.span 
