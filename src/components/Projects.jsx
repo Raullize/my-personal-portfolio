@@ -62,6 +62,13 @@ const projectsData = [
     imageUrl: '/projects/mirc.png',
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2025'
+  },
+  {
+    titleKey: 'proj_careflowTitle',
+    descKey: 'proj_careflowDesc',
+    imageUrl: '/projects/careflow.png',
+    siteUrl: '',
+    githubUrl: 'https://github.com/Raullize/Hackathon2026'
   }
 ];
 

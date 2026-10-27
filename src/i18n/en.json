@@ -148,6 +148,8 @@
   "proj_contacomigoDesc": "Web platform for personal finance management with Open Finance integration. Allows viewing accounts, transactions and financial goals in a single panel.",
   "proj_mircTitle": "MIRC",
   "proj_mircDesc": "Intelligent Climate Resilience Mapper (MIRC): Web platform integrated with AI chatbot and geolocation for early warnings and climate risk guidance (floods) in Rio Grande do Sul.",
+  "proj_careflowTitle": "CareFlow",
+  "proj_careflowDesc": "Oncology care deadline tracking platform with an operational calendar, alerts, metrics, AI-assisted report structuring, and a read-only patient link.",
 
   "projectsTitle": "My Projects",
   "projectsDescription": "Some of the projects I've developed or participated in",
