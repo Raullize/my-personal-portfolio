@@ -1,23 +1,85 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/i18n/useTranslation';
-import { Globe, Github } from 'lucide-react';
+import { Globe, Github, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const ProjectCard = ({ title, description, imageUrl, siteUrl, githubUrl }) => {
+const ProjectCard = ({ title, description, images = [], siteUrl, githubUrl }) => {
   const { t } = useTranslation();
-  
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const hasMultipleImages = images.length > 1;
+
+  const goToImage = (index) => {
+    setCurrentImage((index + images.length) % images.length);
+  };
+
+  useEffect(() => {
+    if (!hasMultipleImages || isPaused) return;
+
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [hasMultipleImages, isPaused, images.length, currentImage]);
+
   return (
     <div className="group relative overflow-hidden rounded-xl border border-gray-800 bg-gray-900/80 backdrop-blur-sm hover:border-gray-700 transition-all h-full flex flex-col">
-      <div className="aspect-video relative overflow-hidden">
-        {imageUrl ? (
-          <Image
-            src={imageUrl}
-            alt={title}
-            fill
-            className="object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
+      <div
+        className="aspect-video relative overflow-hidden"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        {images.length > 0 ? (
+          <>
+            <Image
+              key={images[currentImage]}
+              src={images[currentImage]}
+              alt={`${title} - ${currentImage + 1}`}
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+
+            {hasMultipleImages && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => goToImage(currentImage - 1)}
+                  aria-label={t('previousImage')}
+                  title={t('previousImage')}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => goToImage(currentImage + 1)}
+                  aria-label={t('nextImage')}
+                  title={t('nextImage')}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
+                  {images.map((image, index) => (
+                    <button
+                      key={image}
+                      type="button"
+                      onClick={() => goToImage(index)}
+                      aria-label={`${title} - ${index + 1}`}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        index === currentImage ? 'bg-white' : 'bg-white/40 hover:bg-white/70'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </>
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
             <span className="text-gray-400 text-lg font-medium">{title}</span>

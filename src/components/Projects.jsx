@@ -10,63 +10,72 @@ const projectsData = [
   {
     titleKey: 'proj_aprovaaiTitle',
     descKey: 'proj_aprovaaiDesc',
-    imageUrl: '/projects/aprova-ai.png',
+    images: ['/projects/aprova-ai.png'],
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/AprovaAI'
   },
   {
     titleKey: 'proj_armazemTitle',
     descKey: 'proj_armazemDesc',
-    imageUrl: '/projects/armazem-girassol.png',
+    images: ['/projects/armazem-girassol.png'],
     siteUrl: 'https://armazem-girassol.vercel.app/',
     githubUrl: 'https://github.com/Raullize/armazem-girassol'
   },
   {
     titleKey: 'proj_depsTitle',
     descKey: 'proj_depsDesc',
-    imageUrl: '/projects/deps-models.png',
+    images: ['/projects/deps-models.png'],
     siteUrl: 'https://depsmodels.com/',
     githubUrl: 'https://github.com/Raullize/deps-models'
   },
   {
     titleKey: 'proj_octoTitle',
     descKey: 'proj_octoDesc',
-    imageUrl: '/projects/octo-hub.png',
+    images: ['/projects/octo-hub.png'],
     siteUrl: 'https://octo-hub-site.vercel.app/',
     githubUrl: 'https://github.com/Raullize/octoHub'
   },
   {
     titleKey: 'proj_mygymTitle',
     descKey: 'proj_mygymDesc',
-    imageUrl: '/projects/my-gym.png',
+    images: ['/projects/my-gym.png'],
     siteUrl: 'https://my-gym-academy.vercel.app',
     githubUrl: 'https://github.com/depsModels/MyGym'
   },
   {
     titleKey: 'proj_deepfocusTitle',
     descKey: 'proj_deepfocusDesc',
-    imageUrl: '/projects/deep-focus.png',
+    images: ['/projects/deep-focus.png'],
     siteUrl: 'https://deepfocus-pomodoro.vercel.app',
     githubUrl: 'https://github.com/Raullize/deep-focus'
   },
   {
     titleKey: 'proj_contacomigoTitle',
     descKey: 'proj_contacomigoDesc',
-    imageUrl: '/projects/conta-comigo.png',
+    images: ['/projects/conta-comigo.png'],
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/ContaComigo'
   },
   {
     titleKey: 'proj_mircTitle',
     descKey: 'proj_mircDesc',
-    imageUrl: '/projects/mirc.png',
+    images: [
+      '/projects/mirc-home.png',
+      '/projects/mirc-risk-map.png',
+      '/projects/mirc-social-proof.png',
+      '/projects/mirc-login.png'
+    ],
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2025'
   },
   {
     titleKey: 'proj_careflowTitle',
     descKey: 'proj_careflowDesc',
-    imageUrl: '/projects/careflow.png',
+    images: [
+      '/projects/careflow-calendar.png',
+      '/projects/careflow-case-detail.jpeg',
+      '/projects/careflow-notifications.jpeg'
+    ],
     siteUrl: '',
     githubUrl: 'https://github.com/Raullize/Hackathon2026'
   }
@@ -78,7 +87,7 @@ const Projects = () => {
   const projects = projectsData.map(project => ({
     title: t(project.titleKey),
     description: t(project.descKey),
-    imageUrl: project.imageUrl,
+    images: project.images,
     siteUrl: project.siteUrl,
     githubUrl: project.githubUrl
   }));
@@ -120,7 +129,7 @@ const Projects = () => {
               <ProjectCard
                 title={project.title}
                 description={project.description}
-                imageUrl={project.imageUrl}
+                images={project.images}
                 siteUrl={project.siteUrl}
                 githubUrl={project.githubUrl}
               />
